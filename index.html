@@ -59,6 +59,12 @@
 
     <section class="row">
         <div class="col-full">
+            <h2>Proceedings</h2>
+            <p>The proceedings of the workshop are published in the ACM Digital Library under the <a href="https://doi.org/10.1145/3594778">DOI 10.1145/3594778</a>.</p>
+    </section>
+
+    <section class="row">
+        <div class="col-full">
             <h2>Keynote Speakers</h2>
             <p>We are very honored to host the following two keynote speakers this year.</p>
             <ul>
@@ -89,7 +95,7 @@
             </p>
             <p class='session'>
                 <span class='time'>9:05 AM - 10:05 AM</span>
-                <span class='stitle'>Keynote by James Cheng (CUHK &amp; Kasma Pte Ltd): <i>Building a Platform for Graph Feature Management</i></span>
+                <span class='stitle'>Keynote by James Cheng (CUHK &amp; Kasma Pte Ltd): <a href="https://doi.org/10.1145/3594778.3596882">Building a Platform for Graph Feature Management</a></span>
                 <span style="display: block; margin-top: 0.5em; font-size: smaller; line-height: 1.4em;"><b>Abstract:</b> Graph features are crucial to many applications such as recommender systems and risk management systems. The process to obtain useful graph features involves ingesting data from various upstream data sources, defining the desired graph features for the required applications, constructing a feature engineering workflow to compute the features, and storing and managing the resulting features for downstream tasks (e.g., graph AI and graph BI) and for future reuse. To the majority of users, especially SMEs and non-tech companies, this process poses daunting challenges as it requires users to not only learn various methods (e.g., graph analytical algorithms, non-GNN graph embeddings, GNNs) to define graph features and program their computation, but also learn many infrastructures (e.g., upstream databases, downstream ML systems, graph analytics systems) to compute, manage and use the graph features in production. These challenges have significantly restricted the wider applications of graph technologies such as graph AI and graph BI currently in industry. The current solution provided by major graph database vendors (e.g., Amazon Neptune, Neo4j, TigerGraph) is to connect various upstream and downstream systems to their own graph database, which is used to compute and manage graph features. However, such a solution ties users to a specific graph infrastructure that may not be the preferred infrastructure and may even require them to re-develop their applications on a new infrastructure. In addition, a specific graph database or infrastructure often does not have the best performance for all workloads and certainly does not support the computation of all types of graph features. As a result, the existing solution limits users' flexibility in choosing their own infrastructure and their productivity in developing their applications.
                 <br/>
                 In Part 1 of this talk, I will introduce various types of graph features and their applications. Then I will present some trends in using graph databases for graph feature computation and management, analyze the limitations of the existing methods, and identify the requirements of a graph feature management solution that is practical and highly usable to average users. In Part 2 of this talk, I will introduce our ongoing project that aims at providing a highly usable graph feature platform. Our solution decouples graph feature logic specification and management (i.e., how features are defined, coded and managed) from the generation and execution of the workflow for feature computation (i.e., execution plan generation and the actual execution), so that users can flexibly select different infrastructures suitable for the computation of specific types of graph features. It also manages the upstream, downstream and feature engineering and serving infrastructures, so as to free users from tedious tasks associated with deploying infrastructures and connecting them in a feature engineering dataflow. Thus, users can focus on creating and delivering innovative feature workflow logic. Finally, I will also highlight some possible future directions about graph feature management.</span>
@@ -100,7 +106,7 @@
                 <span class='stitle'>Paper Presentation</span>
                 <ul>
                     <li class='paper'>
-                        <span class='title'>Future-Time Temporal Path Queries</span>
+                        <span class='title'><a href="https://doi.org/10.1145/3594778.3594879">Future-Time Temporal Path Queries</a></span>
                         <span class='authors'>Christos Gkartzios and Evaggelia Pitoura</span>
                     </li>
                 </ul>
@@ -113,15 +119,15 @@
                 <span class='stitle'>Paper Presentations</span>
                 <ul>
                     <li class='paper'>
-                        <span class='title'>Going with the Flow: Real-Time Max-Flow on Asynchronous Dynamic Graphs</span>
+                        <span class='title'><a href="https://doi.org/10.1145/3594778.3594882">Going with the Flow: Real-Time Max-Flow on Asynchronous Dynamic Graphs</a></span>
                         <span class='authors'>Juntong Luo, Scott Sallinen, and Matei Ripeanu</span>
                     </li>
                     <li class='paper'>
-                        <span class='title'>Fast Synthetic Data-Aware Log Generation for Temporal Declarative Models</span>
+                        <span class='title'><a href="https://doi.org/10.1145/3594778.3594881">Fast Synthetic Data-Aware Log Generation for Temporal Declarative Models</a></span>
                         <span class='authors'>Giacomo Bergami</span>
                     </li>
                     <li class='paper'>
-                        <span class='title'>Learning Graph Neural Networks using Exact Compression</span>
+                        <span class='title'><a href="https://doi.org/10.1145/3594778.3594878">Learning Graph Neural Networks using Exact Compression</a></span>
                         <span class='authors'>Jeroen Bollen, Jasper Steegmans, Jan Van den Bussche, and Stijn Vansummeren</span>
                     </li>
                 </ul>
@@ -131,7 +137,7 @@
             </p>
             <p class='session'>
                 <span class='time'>1:30 PM - 2:30 PM</span>
-                <span class='stitle'>Keynote by Amy Hodler (RelationalAI): <i>The Commercial Side of Graph Analytics: Big Uses, Big Mistakes, Big Opportunities</i></span>
+                <span class='stitle'>Keynote by Amy Hodler (RelationalAI): <a href="https://doi.org/10.1145/3594778.3596883">The Commercial Side of Graph Analytics: Big Uses, Big Mistakes, Big Opportunities</a></span>
                 <span style="display: block; margin-top: 0.5em; font-size: smaller; line-height: 1.4em;"><b>Abstract:</b> Connectivity is the cornerstone of our contemporary world, permeating various sectors like retail, communications, biology, and finance. Although this inherent interconnectedness holds substantial meaning and predictive power, harnessing it for practical use in the business realm often proves challenging. In this presentation, we will delve into the commercial applications of graph analytics, highlighting both common pitfalls to avoid and promising opportunities to explore.
                 <br/>
                 To begin, we will explore the prevalent use cases of graph analytics, encompassing areas such as fraud detection, supply chain optimization, data management, and recommendations. We'll also shed light on why many teams tend to deploy only a limited set of graph algorithms. Additionally, we will examine how the COVID-19 pandemic has impacted the utilization of graphs in business settings.
@@ -148,7 +154,7 @@
                 <span class='stitle'>Paper Presentation</span>
                 <ul>
                     <li class='paper'>
-                        <span class='title'>Better Distributed Graph Query Planning With Scouting Queries</span>
+                        <span class='title'><a href="https://doi.org/10.1145/3594778.3594884">Better Distributed Graph Query Planning With Scouting Queries</a></span>
                         <span class='authors'>Tomáš Faltín, Vasileios Trigonakis, Ayoub Berdai, Luigi Fusco, Călin Iorgulescu, Sungpack Hong, and Hassan Chafi</span>
                     </li>
                 </ul>
@@ -161,11 +167,11 @@
                 <span class='stitle'>Demo Presentations</span>
                 <ul>
                     <li class='paper'>
-                        <span class='title'>Interpretability Methods for Graph Neural Networks</span>
+                        <span class='title'><a href="https://doi.org/10.1145/3594778.3594880">Interpretability Methods for Graph Neural Networks</a></span>
                         <span class='authors'>Ehsan Bonabi Mobaraki and Arijit Khan</span>
                     </li>
                     <li class='paper'>
-                        <span class='title'>EAGER: Explainable Question Answering Using Knowledge Graphs</span>
+                        <span class='title'><a href="https://doi.org/10.1145/3594778.3594877">EAGER: Explainable Question Answering Using Knowledge Graphs</a></span>
                         <span class='authors'>Andrew Chai, Alireza Vezvaei, Lukasz Golab, Mehdi Kargar, Divesh Srivastava, Jaroslaw Szlichta, and Morteza Zihayat</span>
                     </li>
                 </ul>
