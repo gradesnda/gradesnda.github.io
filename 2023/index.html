@@ -1,0 +1,466 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/vendor/fluidbox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>GRADES-NDA 2023</title>
+</head>
+<body>
+
+<header>
+    <div class="photo-grid">
+        <a href="/"><img src="img/sigmod2023-logo.jpg" alt="GRADES-NDA"></a>
+    </div>
+    <!--
+    <div id="logo-container">
+        <div id="logo"><a href="/"><img src="img/grades_nda_v3_twitter.png" alt="Example photo"></a></div>
+    </div>
+    -->
+    <div id="title-container">6th Joint Workshop on Graph Data Management
+        Experiences & Systems (GRADES) and Network Data Analytics (NDA)
+    </div>
+    <div id="subtitle-container"> Co-located with <a href="https://2023.sigmod.org/"> SIGMOD 2023 </a> (18 June 2023, Seattle, WA, USA)
+    </div>
+    <div>
+        <a href="https://twitter.com/gradesnda?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @gradesnda</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<!--        <a href="https://twitter.com/intent/tweet?button_hashtag=gradesnda20&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false" data-size="large">Tweet #gradesnda20</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>-->
+    </div>
+    <nav>
+        <ul>
+<!--             <li><a href="#accepted" class="bordered">Accepted Papers</a></li> -->
+<!--             <li><a href="#">Registration</a></li>-->
+            <li><a href="#dates">Important Dates</a></li>
+            <li><a href="#program" class="bordered">Program</a></li>
+<!--             <li><a href="https://dl.acm.org/doi/proceedings/10.1145/3461837" class="bordered">Proceedings</a></li> -->
+<!--             <li><a href="#submission">Paper Submission</a></li> -->
+            <li><a href="#pc">Program Committee</a></li>
+<!--             <li><a href="#travel">Travel Awards</a></li> -->
+            <li><a href="#previous">Past Workshops</a></li>
+<!--             <li><a href="#sponsors">Sponsors</a></li> -->
+       </ul>
+    </nav>
+</header>
+
+<div id="content">
+
+    <section class="row">
+        <div class="col-full">
+            <p> The goal of GRADES-NDA is to bring together researchers from academia, industry, and government (1) to
+                create a forum for discussing recent advances in (large-scale) graph data management and graph analytics
+                systems, as well as propose and discuss novel methods and techniques towards (2) addressing domain-specific challenges or (3) handling noise in real-world graphs.</p>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2>Keynote Speakers</h2>
+            <p>We are very honored to host the following two keynote speakers this year.</p>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/amyhodler" style="font-weight: bold;">Amy Hodler</a>&nbsp; RelationalAI
+                    <br/>
+                    Amy is an evangelist for graph analytics and responsible AI. She is also the co-author of O’Reilly books on <a href="https://www.amazon.com/Graph-Algorithms-Practical-Examples-Apache/dp/1492047686">Graph Algorithms</a> and <a href="https://neo4j.com/knowledge-graphs-data-in-context-for-responsive-businesses/">Knowledge Graphs</a> as well as a contributor to the Routledge book, <a href="https://www.routledge.com/Massive-Graph-Analytics/Bader/p/book/9780367464127">Massive Graph Analytics</a>. Amy has decades of experience in emerging tech at companies such as Microsoft, Hewlett-Packard (HP), Hitachi IoT, Neo4j, and Cray. At RelationalAI, she is the Graph Evangelist and Sr. Director of Product Marketing. Amy recently founded GraphGeeks.org to bring together graph enthusiastics and highlight their work.
+                </li>
+                <li>
+                    <a href="https://www.cse.cuhk.edu.hk/~jcheng/" style="font-weight: bold;">James Cheng</a>&nbsp; The Chinese University of Hong Kong (CUHK) &amp; Kasma Pte Ltd
+                    <br/>
+                    Prof. James Cheng is currently with the Department of Computer Science and Engineering at the Chinese University of Hong Kong and his research focuses on developing systems for graph data management, graph computing, and graph machine learning. Many of the systems developed by his team have been deployed in various large-scale industrial production environments. Prof.&nbsp;Cheng is also the founder of a startup company specializing in graph database and graph data analytics.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="program"></a>Program</h2>
+            <p style="color:gray"><i>All times are in PDT (Pacific Daylight Time, the local time in Seattle).</i></p>
+            <p class='session'>
+            <div class="separator"><b>Start of the workshop at 9:00 AM</b></div>
+            </p>
+            <p class='session'>
+                <span class='time'>9:00 AM - 9:05 AM</span>
+                <span class='stitle'>Welcome</span>
+            </p>
+            <p class='session'>
+                <span class='time'>9:05 AM - 10:05 AM</span>
+                <span class='stitle'>Keynote by James Cheng (CUHK &amp; Kasma Pte Ltd): <i>Building a Platform for Graph Feature Management</i></span>
+                <span style="display: block; margin-top: 0.5em; font-size: smaller; line-height: 1.4em;"><b>Abstract:</b> Graph features are crucial to many applications such as recommender systems and risk management systems. The process to obtain useful graph features involves ingesting data from various upstream data sources, defining the desired graph features for the required applications, constructing a feature engineering workflow to compute the features, and storing and managing the resulting features for downstream tasks (e.g., graph AI and graph BI) and for future reuse. To the majority of users, especially SMEs and non-tech companies, this process poses daunting challenges as it requires users to not only learn various methods (e.g., graph analytical algorithms, non-GNN graph embeddings, GNNs) to define graph features and program their computation, but also learn many infrastructures (e.g., upstream databases, downstream ML systems, graph analytics systems) to compute, manage and use the graph features in production. These challenges have significantly restricted the wider applications of graph technologies such as graph AI and graph BI currently in industry. The current solution provided by major graph database vendors (e.g., Amazon Neptune, Neo4j, TigerGraph) is to connect various upstream and downstream systems to their own graph database, which is used to compute and manage graph features. However, such a solution ties users to a specific graph infrastructure that may not be the preferred infrastructure and may even require them to re-develop their applications on a new infrastructure. In addition, a specific graph database or infrastructure often does not have the best performance for all workloads and certainly does not support the computation of all types of graph features. As a result, the existing solution limits users' flexibility in choosing their own infrastructure and their productivity in developing their applications.
+                <br/>
+                In Part 1 of this talk, I will introduce various types of graph features and their applications. Then I will present some trends in using graph databases for graph feature computation and management, analyze the limitations of the existing methods, and identify the requirements of a graph feature management solution that is practical and highly usable to average users. In Part 2 of this talk, I will introduce our ongoing project that aims at providing a highly usable graph feature platform. Our solution decouples graph feature logic specification and management (i.e., how features are defined, coded and managed) from the generation and execution of the workflow for feature computation (i.e., execution plan generation and the actual execution), so that users can flexibly select different infrastructures suitable for the computation of specific types of graph features. It also manages the upstream, downstream and feature engineering and serving infrastructures, so as to free users from tedious tasks associated with deploying infrastructures and connecting them in a feature engineering dataflow. Thus, users can focus on creating and delivering innovative feature workflow logic. Finally, I will also highlight some possible future directions about graph feature management.</span>
+                <span style="display: block; margin-top: 0.5em; font-size: smaller; line-height: 1.4em;"><b>Speaker:</b> Prof. James Cheng is currently with the Department of Computer Science and Engineering at the Chinese University of Hong Kong and his research focuses on developing systems for graph data management, graph computing, and graph machine learning. Many of the systems developed by his team have been deployed in various large-scale industrial production environments. Prof.&nbsp;Cheng is also the founder of a startup company specializing in graph database and graph data analytics.</span>
+            </p>
+            <p class='session'>
+                <span class='time'>10:05 AM - 10:30 AM</span>
+                <span class='stitle'>Paper Presentation</span>
+                <ul>
+                    <li class='paper'>
+                        <span class='title'>Future-Time Temporal Path Queries</span>
+                        <span class='authors'>Christos Gkartzios and Evaggelia Pitoura</span>
+                    </li>
+                </ul>
+            </p>
+            <p class='session'>
+            <div class="separator">Coffee Break (30 mins)</div>
+            </p>
+            <p class='session'>
+                <span class='time'>11:00 AM - 12:30 PM</span>
+                <span class='stitle'>Paper Presentations</span>
+                <ul>
+                    <li class='paper'>
+                        <span class='title'>Going with the Flow: Real-Time Max-Flow on Asynchronous Dynamic Graphs</span>
+                        <span class='authors'>Juntong Luo, Scott Sallinen, and Matei Ripeanu</span>
+                    </li>
+                    <li class='paper'>
+                        <span class='title'>Fast Synthetic Data-Aware Log Generation for Temporal Declarative Models</span>
+                        <span class='authors'>Giacomo Bergami</span>
+                    </li>
+                    <li class='paper'>
+                        <span class='title'>Learning Graph Neural Networks using Exact Compression</span>
+                        <span class='authors'>Jeroen Bollen, Jasper Steegmans, Jan Van den Bussche, and Stijn Vansummeren</span>
+                    </li>
+                </ul>
+            </p>
+            <p class='session'>
+            <div class="separator">Lunch Break (60 mins)</div>
+            </p>
+            <p class='session'>
+                <span class='time'>1:30 PM - 2:30 PM</span>
+                <span class='stitle'>Keynote by Amy Hodler (RelationalAI): <i>The Commercial Side of Graph Analytics: Big Uses, Big Mistakes, Big Opportunities</i></span>
+                <span style="display: block; margin-top: 0.5em; font-size: smaller; line-height: 1.4em;"><b>Abstract:</b> Connectivity is the cornerstone of our contemporary world, permeating various sectors like retail, communications, biology, and finance. Although this inherent interconnectedness holds substantial meaning and predictive power, harnessing it for practical use in the business realm often proves challenging. In this presentation, we will delve into the commercial applications of graph analytics, highlighting both common pitfalls to avoid and promising opportunities to explore.
+                <br/>
+                To begin, we will explore the prevalent use cases of graph analytics, encompassing areas such as fraud detection, supply chain optimization, data management, and recommendations. We'll also shed light on why many teams tend to deploy only a limited set of graph algorithms. Additionally, we will examine how the COVID-19 pandemic has impacted the utilization of graphs in business settings.
+                <br/>
+                Next, we will venture into the major mistakes that businesses often make when implementing graph analytics. These blunders range from technical hurdles like scalability issues and handling tricky data types to human challenges such as fostering a graph-thinking mindset and avoiding excessive perfectionism. Moreover, you will gain quick tips to help teams secure funding for graph projects.
+                <br/>
+                Lastly, we will delve into some of the most significant prospects within the commercial space. We will address enduring challenges, such as transforming business data into a graph format and ensuring interoperability with production processes. We will also dedicate time to exploring the rising interest in combining graphs with AI systems, particularly the recent buzz surrounding combining graphs with generative AI. While this particular trend garners attention, we will look at other promising opportunities that it may overshadow.
+                <br/>
+                By the end of this talk, you will have gained a comprehensive understanding of the practical applications of graph analytics in business contexts. Furthermore, you'll gain valuable knowledge about pitfalls to avoid, strategies for securing funding, and a forward-looking perspective on emerging possibilities in this dynamic field.</span>
+                <span style="display: block; margin-top: 0.5em; font-size: smaller; line-height: 1.4em;"><b>Speaker:</b> Amy is an evangelist for graph analytics and responsible AI. She is also the co-author of O’Reilly books on <a href="https://www.amazon.com/Graph-Algorithms-Practical-Examples-Apache/dp/1492047686">Graph Algorithms</a> and <a href="https://neo4j.com/knowledge-graphs-data-in-context-for-responsive-businesses/">Knowledge Graphs</a> as well as a contributor to the Routledge book, <a href="https://www.routledge.com/Massive-Graph-Analytics/Bader/p/book/9780367464127">Massive Graph Analytics</a>. Amy has decades of experience in emerging tech at companies such as Microsoft, Hewlett-Packard (HP), Hitachi IoT, Neo4j, and Cray. At RelationalAI, she is the Graph Evangelist and Sr. Director of Product Marketing. Amy recently founded GraphGeeks.org to bring together graph enthusiastics and highlight their work.</span>
+            </p>
+            <p class='session'>
+                <span class='time'>2:30 PM - 3:00 PM</span>
+                <span class='stitle'>Paper Presentation</span>
+                <ul>
+                    <li class='paper'>
+                        <span class='title'>Better Distributed Graph Query Planning With Scouting Queries</span>
+                        <span class='authors'>Tomáš Faltín, Vasileios Trigonakis, Ayoub Berdai, Luigi Fusco, Călin Iorgulescu, Sungpack Hong, and Hassan Chafi</span>
+                    </li>
+                </ul>
+            </p>
+            <p class='session'>
+            <div class="separator">Coffee Break (30 mins)</div>
+            </p>
+            <p class='session'>
+                <span class='time'>3:30 PM - 4:10 PM</span>
+                <span class='stitle'>Demo Presentations</span>
+                <ul>
+                    <li class='paper'>
+                        <span class='title'>Interpretability Methods for Graph Neural Networks</span>
+                        <span class='authors'>Ehsan Bonabi Mobaraki and Arijit Khan</span>
+                    </li>
+                    <li class='paper'>
+                        <span class='title'>EAGER: Explainable Question Answering Using Knowledge Graphs</span>
+                        <span class='authors'>Andrew Chai, Alireza Vezvaei, Lukasz Golab, Mehdi Kargar, Divesh Srivastava, Jaroslaw Szlichta, and Morteza Zihayat</span>
+                    </li>
+                </ul>
+            </p>
+            <p class='session'>
+                <span class='time'>4:10 PM - 5:00 PM</span>
+                <span class='stitle'>Invited Talks</span>
+                <ul>
+                    <li class='paper'>
+                        <span class='title'>Distributed temporal graph analytics with GRADOOP</span>
+                        <span class='authors'>Christopher Rost</span>
+                        <a href="https://doi.org/10.1007/s00778-021-00667-4">related VLDBJ article</a>
+                    </li>
+                    <li class='paper'>
+                        <span class='title'>A General Cardinality Estimation Framework for Subgraph Matching in Property Graphs</span>
+                        <span class='authors'>George Fletcher</span>
+                        <a href="https://doi.org/10.1109/TKDE.2022.3161328">related TDKE article</a>
+                    </li>
+                </ul>
+            </p>
+            <p class='session'>
+            <div class="separator">End of the workshop at 5:00 PM</div>
+            </p>
+
+        </div>
+    </section>
+
+<!--
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="accepted"></a>Accepted Papers</h2>
+            <p>The following papers have been accepted for this year's workshop.</p>
+            <ul>
+                <li><strong>Better Distributed Graph Query Planning With Scouting Queries</strong><br/>Tomáš Faltín, Vasileios Trigonakis, Ayoub Berdai, Luigi Fusco, Călin Iorgulescu, Sungpack Hong and Hassan Chafi</li>
+                <li><strong>EAGER: Explainable Question Answering Using Knowledge Graphs</strong><br/>Andrew Chai, Alireza Vezvaei, Lukasz Golab, Mehdi Kargar, Divesh Srivastava, Jaroslaw Szlichta and Morteza Zihayat</li>
+                <li><strong>Going with the Flow: Real-Time Max-Flow on Asynchronous Dynamic Graphs</strong><br/>Juntong Luo, Scott Sallinen and Matei Ripeanu</li>
+                <li><strong>Future-Time Temporal Path Queries</strong><br/>Christos Gkartzios and Evaggelia Pitoura</li>
+                <li><strong>Fast Synthetic Data-Aware Log Generation for Temporal Declarative Models</strong><br/>Giacomo Bergami</li>
+                <li><strong>Learning Graph Neural Networks using Exact Compression</strong><br/>Jeroen Bollen, Jasper Steegmans, Jan Van den Bussche and Stijn Vansummeren</li>
+                <li><strong>Interpretability Methods for Graph Neural Networks (Demo)</strong><br/>Ehsan Bonabi Mobaraki and Arijit Khan</li>
+            </ul>
+        </div>
+    </section>
+-->
+
+<!--
+    <section class="row">
+        <div class="col-full">
+            <h2>Call for Papers</h2>
+            <p> The goal of GRADES-NDA is to bring together researchers from academia, industry, and government (1) to
+                create a forum for discussing recent advances in (large-scale) graph data management and graph analytics
+                systems, as well as propose and discuss novel methods and techniques towards (2) addressing domain-specific challenges or (3) handling noise in real-world graphs.</p>
+            <p>The workshop will be of interest to researchers in the development of novel data-management applications
+                and systems for large-scale graph analytics. More specifically, the intended audience are, but not
+                limited to, academic and industrial computer scientists interested in databases and data mining, machine
+                learning, data streaming, graph theory and algorithms. Along with novel research work, we encourage
+                submissions with demonstrations and case studies from real-life experiences in various domains such as
+                Social Networks, Biological Network Data, Marketing and Media, Business Data Analysis, Healthcare Data,
+                Cybersecurity etc.
+            </p>
+            <p>Topics of interest include but are not limited to the following.</p>
+            <ul>
+                <li>Graph query languages, visualization techniques and querying interfaces, and their effective realization</li>
+                <li>Graph platform and parallel platforms,  e.g., Flink/Gelly, Titan, SPARK/GraphX, GraphLab/PowerGraph, Giraph, GraphChi etc.</li>
+                <li>Network data representation, storage, indexing and querying methods.</li>
+                <li>Experiences or techniques for graph specific operations such as traversals or inference/reasoning in the context of large data sets and on the systems that implement those operations.</li>
+                <li>RDF data management and analytics</li>
+                <li>Dynamic Graphs: managing graph updates; graph stream analytics; analyzing evolution and detection of community structures in real-world evolving graphs</li>
+                <li>Mining and machine learning on heterogeneous networks -- knowledge graphs etc.</li>
+                <li>Graph summarization and sampling</li>
+                <li>Game Theory, Social contagion and Information propagation on networks</li>
+                <li>Analytics on dirty, noisy, or uncertain graphs</li>
+                <li>Spatial and temporal graph analytics</li>
+                <li>Analytics on social, biological, retail, marketing, customer care, financial, healthcare, transportation network data sets</li>
+                <li> Descriptions of graph data management use cases and query workloads, and experiences with applying data management technologies in such situations</li>
+                <li>Vision and systems papers describing potential or real applications and benefits of graph management</li>
+            </ul>
+            <br>
+            <p> Accepted papers will be published by ACM, indexed by DBLP, and will be available in the ACM DL.</p>
+        </div>
+    </section>
+-->
+
+	<section class="row">
+		<div class="col">
+			<h2><a id="dates"></a>Important Dates</h2>
+			<ul>
+                <li>Abstract Submission: <strike>March 15</strike> March 20, 2023</li>
+                <li>Paper Submission: <strike>March 22</strike> March 27, 2023</li>
+                <li>Notifications: <strike>April 19</strike> April 24, 2023</li>
+                <li>Camera Ready Submission: <strike>May 3</strike> May 8, 2023</li>
+                <li>Workshop Date: June 18, 2023</li>
+			</ul>
+			<p></p>
+			<i>All deadlines are 23:59 Hours AoE</i>
+            <p></p>
+		</div>
+		<div class="col">
+			<h2>Workshop Organizers</h2>
+			<ul>
+                <li><a href="http://olafhartig.de/">Olaf Hartig</a>, Amazon Web Services &amp; Link&ouml;ping University, Sweden</li>
+                <li><a href="http://research.nii.ac.jp/~yyoshida/">Yuichi Yoshida</a>, National Institute of Informatics, Japan</li>
+			</ul><br>
+			<h2>Steering Committee</h2>
+			<ul>
+                <li><a href="https://cs.uwaterloo.ca/~ssalihog/">Semih Salihoglu</a>, University of Waterloo, Canada</li>
+				<li><a href="https://cs-people.bu.edu/vkalavri/">Vasiliki Kalavri</a>, Boston University, US</li>
+                <li><a href="https://dlab.epfl.ch/people/aarora/">Akhil Arora</a>, EPFL, Switzerland</li>
+                <li><a href="https://www.tue.nl/en/research/researchers/george-fletcher/">George Fletcher</a>, TU Eindhoven, The Netherlands</li>
+			</ul>
+		</div>
+	</section>
+
+<!--
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="submission"></a>Paper Submission</h2>
+            <p>Authors are invited to submit original, unpublished research papers (full and short), demonstrations and case-studies. </p>
+            <p>Submissions must follow the latest 2-column ACM Proceedings format using the latest <a href="https://www.acm.org/publications/proceedings-template">ACM Primary Article Template</a>, and have to be anonymous. </p>
+            <p>Reviewing will be double-anonymous, for which the submissions must be anonymized by following the same anonymity requirements as for <a href="https://2023.sigmod.org/calls_papers_sigmod_research.shtml">regular track papers at the SIGMOD 2023 conference</a>. Use the following latex command to compile your paper without author names: <code>\documentclass[sigconf, anonymous, review]{acmart}</code>.</p>
+            </p>
+            <p>Length Requirements:</p>
+            <ul>
+                <li>Full papers should be a maximum of 8 pages in length, excluding references and appendix.</li>
+                <li>Case studies should be a maximum of 4 pages in length, excluding references and appendix.</li>
+                <li>Short papers and demonstration papers should be a maximum of 4 pages in length, excluding references and appendix.</li>
+            </ul>
+            <p>Submissions that do not follow these requirements will be rejected immediately.</p>
+            <br/>
+            <p>Submissions will be handled through Easychair.
+            To submit click <a href="https://easychair.org/conferences/?conf=gradesnda2023">here</a>.
+            </p>
+        </div>
+    </section>
+-->
+
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="pc"></a>Program Committee</h2>
+            <ul>
+                <li>	Renzo	Angles,	Universidad de Talca	</li>
+                <li>	Marcelo	Arenas,	PUC Chile	</li>
+                <li>	Akhil	Arora,	Ecole Polytechnique Fédérale de Lausanne	</li>
+                <li>	Amitabha	Bagchi,	Indian Institute of Technology, Delhi	</li>
+                <li>	Srikanta	Bedathur,	IIT Delhi	</li>
+                <li>	Yang	Cao,	The University of Edinburgh	</li>
+                <li>	Juan	Colmenares,	LinkedIn	</li>
+                <li>	Amol	Deshpande,	University of Maryland	</li>
+                <li>	Sourav	Dutta,	Huawei Research	</li>
+                <li>	George H. L.	Fletcher,	Eindhoven University of Technology	</li>
+                <li>	Irini	Fundulaki,	ICS-FORTH	</li>
+                <li>	Russ	Harmer,	CNRS &amp; ENS Lyon	</li>
+                <li>	Jan	Hidders,	Birkbeck College, University of London	</li>
+                <li>	Alexandru	Iosup,	VU	</li>
+                <li>	Panos	Kalnis,	King Abdullah University of Science and Technology	</li>
+                <li>	Zoi	Kaoudi,	IT University of Copenhagen	</li>
+                <li>	Arijit	Khan,	Nanyang Technological University	</li>
+                <li>	Josep Lluís	Larriba-Pey,	Universitat Politècnica de Catalunya	</li>
+                <li>	Makoto	Onizuka,	Osaka University	</li>
+                <li>	Anil	Pacaci,	Apple	</li>
+                <li>	Evaggelia	Pitoura,	Univ. of Ioannina	</li>
+                <li>	Matei	Ripeanu,	The University of British Columbia	</li>
+                <li>	Petra	Selmer,	Bloomberg	</li>
+                <li>	Marco	Serafini,	University of Massachusetts Amherst	</li>
+                <li>	Hiroaki	Shiokawa,	University of Tsukuba	</li>
+                <li>	Vasileios	Trigonakis,	Oracle Labs	</li>
+                <li>	Ana Lucia	Varbanescu,	University of Amsterdam	</li>
+                <li>	Hannes	Voigt,	Neo4j	</li>
+                <li>	Yinghui	Wu,	Case Western Reserve University	</li>
+                <li>	Yinglong	Xia,	Facebook	</li>
+                <li>	Shangdi	Yu,	MIT	</li>
+                <li>	Wenjie	Zhang,	The University of New South Wales	</li>
+            </ul>
+        </div>
+    </section>
+
+<!--
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="travel"></a>Student Travel Awards</h2>
+            <p>Thanks to the generous support of our Sponsors, we are offering awards for selected students to attend GRADES-NDA and SIGMOD in person. 
+		    Each awardee will receive a stipend to partially cover the expense to attend the conference in-person. 
+		    Awardees are expected to register to SIGMOD in-person full conference and attend the GRADES-NDA Workshop 
+		    and later the SIGMOD conference. Students will have to make their own arrangements for travel and accommodation. 
+		    These awards are only for students who can attend in person. 
+		    If you cannot attend in person, we advise you to check with <a href="https://2023.sigmod.org/grants.shtml">the SIGMOD travel awards committee</a>.</p>
+            <p><b>Eligibility:</b> Applicants need to be a full-time undergraduate or graduate student. 
+		    You  do not need to have an accepted paper to GRADES-NDA (or SIGMOD) to be eligible. 
+		    We will primarily prioritize students whose advisors cannot provide financial support. 
+		    We will also prioritize students who have a GRADES-NDA accepted paper, who are not from North America and Europe, 
+		    as well as female and minority students. </p>
+            <p><b>Application Procedure:</b> To apply for a grant, the student must email the necessary materials to GRADES-NDA chairs 
+		    (please email both Olaf and Yuichi) by <b>April 22</b>. We will notify applicants by <b>April 29</b>.
+            Please submit the following information in a single PDF file with your application:</p>
+            <ul>
+                <li>Your full name, school, and email address.</li>
+                <li>Your advisor's full name and email address.</li>
+                <li>Your CV.</li>
+                <li>An abstract, summarizing your thesis research and its connection to graph data management or graph analytics (at most one page in single column format).</li>
+                <li>If you think your presence could help diversity in the GRADES-NDA or SIGMOD community (in terms of the gender, geography/origin, ethnicity or in other ways), please add an additional paragraph with an explanation (does not count towards the one-page limit for your research).</li>
+            </ul>
+        </div>
+    </section>
+-->
+
+    <section class="row">
+        <h2 id="previous">Past Workshops</h2>
+        <p>GRADES-NDA is in its sixth edition, and had successful joint meetings collocated with SIGMOD/PODS 2018, 2019, 2020, 2021, and 2022, respectively. Specifically, it is the merger of the GRADES and NDA workshops, which were each independently organized and successfully held at previous SIGMOD-PODS meetings, GRADES since 2013 and NDA since 2016. The organizers of GRADES and NDA mutually agreed upon to aim for a joint meeting from 2018 onwards.</p>
+        <div class="col" style="width:30%">
+            <h2>GRADES-NDA</h2>
+            <ul>
+                <li><a href="http://gradesnda.github.io/2022/">GRADES-NDA 2022</a></li>
+                <li><a href="http://gradesnda.github.io/2021/">GRADES-NDA 2021</a></li>
+                <li><a href="http://gradesnda.github.io/2020/">GRADES-NDA 2020</a></li>
+                <li><a href="https://sites.google.com/site/gradesnda2019/">GRADES-NDA 2019</a></li>
+                <li><a href="https://sites.google.com/site/gradesnda2018/">GRADES-NDA 2018</a></li>
+            </ul>
+        </div>
+        <div class="col" style="width:30%">
+            <h2>GRADES</h2>
+            <ul>
+                <li><a href="https://event.cwi.nl/grades/2017/index.shtml">GRADES 2017</a></li>
+                <li><a href="https://event.cwi.nl/grades/2016/index.shtml">GRADES 2016</a></li>
+                <li><a href="https://event.cwi.nl/grades/2015/index.shtml">GRADES 2015</a></li>
+                <li><a href="https://event.cwi.nl/grades/2014/index.shtml">GRADES 2014</a></li>
+                <li><a href="https://event.cwi.nl/grades/2013/index.shtml">GRADES 2013</a></li>
+            </ul>
+        </div>
+        <div class="col" style="width:30%">
+            <h2>NDA</h2>
+            <ul>
+                <li><a href="https://sites.google.com/site/networkdataanalytics2017/">NDA 2017</a></li>
+                <li><a href="https://sites.google.com/site/networkdataanalytics2016/">NDA 2016</a></li>
+            </ul>
+        </div>
+    </section>
+
+<!--
+    <section class="row">
+        <div class="col-full">
+            <h2 id="sponsors">Sponsored by</h2>
+            <div class="photo-grid">
+                <a href="https://neo4j.com/" class="col-3"><img src="img/neo4j-logo.png" alt="Neo4j"></a>
+                <a href="https://http://huawei.com/" class="col-3"><img src="img/huawei-logo.png" alt="Huawei"></a>
+		<a href="https://relational.ai/" class="col-3"><img src="img/Logo-RAI-Color-4x.png" alt="RelationalAI"></a>
+            </div>
+	    <div class="photo-grid">
+		<a href="https://www.amazon.com/" class="col-3"><img src="img/amazon-logo.png" alt="Amazon"></a>
+		<a href="https://http://linkedin.com/" class="col-3"><img src="img/linkedin-logo.png" alt="LinkedIn"></a>
+		<a href="https://www.sap.com/index.html" class="col-3"><img src="img/sap-logo.png" alt="SAP"></a>
+	    </div>
+        </div>
+    </section>
+-->
+
+    <section class="row">
+        <div class="col-full-b">
+            <h2>Get in touch</h2>
+            <p>
+                For questions, please <a href="mailto:gradesnda2023@easychair.org">email</a>. Follow us on <a href="https://twitter.com/gradesnda">Twitter</a> for latest updates about the workshop.
+            </p>
+        </div>
+    </section>
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        document.write('<script src="js/vendor/jquery.1.11.min.js"><\/script>');
+    }
+</script>
+
+<script src="js/vendor/jquery.fluidbox.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'YOUR_GOOGLE_ANALYTICS_ID', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
+
+<!-- © 2014 - Based on free website template by <a href="http://www.pixelsbyrick.com">Rick Waalders</a> -->
