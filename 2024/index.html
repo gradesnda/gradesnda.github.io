@@ -1,0 +1,430 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/vendor/fluidbox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>GRADES-NDA 2024</title>
+</head>
+<body>
+
+<header>
+    <!--
+    <div class="photo-grid">
+        <a href="/"><img src="img/sigmod2023-logo.jpg" alt="GRADES-NDA"></a>
+    </div>
+    -->
+    
+    <div id="logo-container">
+        <div id="logo"><a href="/"><img src="img/grades_nda_v3_twitter.png" alt="Example photo"></a></div>
+    </div>
+    <div id="title-container">7th Joint Workshop on Graph Data Management
+        Experiences &amp; Systems (GRADES) and Network Data Analytics (NDA)
+    </div>
+    <div id="subtitle-container"> Co-located with <a href="https://2024.sigmod.org/"> SIGMOD/PODS 2024 </a> (June 14, 2024, Santiago, Chile)
+    </div>
+    <div>
+        <a href="https://twitter.com/gradesnda?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @gradesnda</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <nav>
+        <ul>
+<!--             <li><a href="#accepted" class="bordered">Accepted Papers</a></li> -->
+<!--             <li><a href="#">Registration</a></li>-->
+            <li><a href="#dates">Important Dates</a></li>
+            <li><a href="#program" class="bordered">Program</a></li>
+<!--             <li><a href="https://dl.acm.org/doi/proceedings/10.1145/3461837" class="bordered">Proceedings</a></li> -->
+<!--             <li><a href="#submission">Paper Submission</a></li> -->
+            <li><a href="#pc">Program Committee</a></li>
+<!--             <li><a href="#travel">Travel Awards</a></li> -->
+            <li><a href="#previous">Past Workshops</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+       </ul>
+    </nav>
+</header>
+
+<div id="content">
+
+    <section class="row">
+        <div class="col-full">
+            <p> The goal of GRADES-NDA is to bring together researchers from academia, industry, and government to
+                create a forum for discussing recent advances in (large-scale) graph data management and graph analytics
+                systems, as well as propose and discuss novel methods and techniques towards addressing domain-specific challenges in real-world graphs.</p>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2>Proceedings</h2>
+            <p>The proceedings of the workshop are published in the ACM Digital Library under the <a href="https://doi.org/10.1145/3661304">DOI 10.1145/3661304</a>.</p>
+    </section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2>Keynote Speaker</h2>
+            <p>We are very honored to host the following keynote speaker this year.</p>
+            <ul>
+                <li>
+                    <a href="https://pages.saclay.inria.fr/ioana.manolescu/" style="font-weight: bold;">Ioana Manolescu</a>&nbsp; Inria &amp; Ecole Polytechnique
+                    <br/>
+                    Ioana Manolescu is a Senior Researcher at Inria, the national french institute of research in computer science and applied mathematics, and a part-time professor at Ecole Polytechnique, France's leading engineering school. Her main research interests are data integration, semistructured data management, and DB+AI methods and tools for data journalism and journalistic fact checking. She has co-authored 170 articles, several books, and is a recipient of the ACM SIGMOD 2020 Contribution Award. She has been a member of the SIGMOD Executive Committee and of the PVLDB Endowment Board, an Editor in chief of the SIGMOD Record, and a general chair of the ICDE conference.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="program"></a>Program</h2>
+            <p style="color:gray"><i>All times are in GMT-4 (the local time in Chile).</i></p>
+            <p class='session'>
+            <div class="separator"><b>Start of the workshop at 08:50 AM</b></div>
+            </p>
+            <p class='session'>
+                <span class='time'>08:50 AM - 09:00 AM</span>
+                <span class='stitle'>Welcome</span>
+            </p>
+            <p class='session'>
+                <span class='time'>09:00 AM - 10:00 AM</span>
+                <span class='stitle'>Keynote: <em>"The Real World is Graph-Structured: Retrieving Meaning from Heterogeneous Data"</em> by Ioana Manolescu (Inria &amp; Ecole Polytechnique)</span>
+                <span style="display: block; margin-top: 0.5em; font-size: smaller; line-height: 1.4em;"><b>Abstract:</b> Integrating heterogeneous data is an old problem with many successive twists. Challenging data integration problems often feature heterogeneity not only at the level of the schema, but also that of the data model. In the <a href="https://connectionstudio.inria.fr/">ConnectionLens project</a>, we have shown that heterogeneous data of many semistructured models can be converted in fine-granularity graphs, which can be enriched and densified with the help of information extraction. Such fine-grain graphs, however, are hard to grasp for non-technical users. To help them get acquainted with a dataset, we devised an abstraction method, which identifies, in fine-granularity data graphs, structured objects endowed with an internal structure, and relationships between them. Our approach, implemented in a system called <a href="https://team.inria.fr/cedar/projects/abstra/">Abstra</a>, inputs a semistructured dataset, and outputs a representation thereof resembling an Entity-Relationship dataset. In contrast with traditional E-R models, our entities may feature deep nesting, reflecting the nested and possibly recursive structure present in some data models. Thus, ConnectionLens with Abstra provide an automated way of "rescuing" the conceptual model, which we argue is best viewed as a graph, behind any application dataset.
+                    (Joint work with Nelly Barret, Prajna Upadhyay and many other colleagues)
+                </span>
+                <span style="display: block; margin-top: 0.5em; font-size: smaller; line-height: 1.4em;"><b>Speaker:</b> Ioana Manolescu is a Senior Researcher at Inria, the national french institute of research in computer science and applied mathematics, and a part-time professor at Ecole Polytechnique, France's leading engineering school. Her main research interests are data integration, semistructured data management, and DB+AI methods and tools for data journalism and journalistic fact checking. She has co-authored 170 articles, several books, and is a recipient of the ACM SIGMOD 2020 Contribution Award. She has been a member of the SIGMOD Executive Committee and of the PVLDB Endowment Board, an Editor in chief of the SIGMOD Record, and a general chair of the ICDE conference.</span>
+            </p>
+            <div class="separator">Coffee Break (30 mins)</div>
+            <p class='session'>
+                <span class='time'>10:30 AM - 10:45 AM</span>
+                <span class='stitle'>Sponsor Talk 1</span>
+                <ul>
+                    <li class='paper'>
+                        <span class='title'>Graph and Multi-Model in SAP HANA</span>
+                        <span class='authors'>Matthias Hauck (<strong>SAP SE</strong>)</span>
+                    </li>
+                </ul>
+            </p>
+            <p class='session'>
+                <span class='time'>10:45 AM - 11:45 PM</span>
+                <span class='stitle'>Paper Presentations</span>
+                <ul>
+                    <li class='paper'>
+                        <span class='title'><a title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3661304.3661897">Understanding High-Performance Subgraph Pattern Matching: A Systems Perspective</a></span>
+                        <span class='authors'>Akshit Sharma, Dinesh Mehta, and Bo Wu</span>
+                    </li>
+                    <li class='paper'>
+                        <span class='title'><a title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3661304.3661898">Space & Time Efficient Leapfrog Triejoin</a></span>
+                        <span class='authors'>Diego Arroyuelo, Daniela Campos, Adrián Gómez Brandón, Gonzalo Navarro, Carlos Rojas, and Domagoj Vrgoc</span>
+                    </li>
+                </ul>
+            </p>
+            <p class='session'>
+                <span class='time'>11:45 AM - 12:00 PM</span>
+                <span class='stitle'>Sponsor Talk 2</span>
+                <ul>
+                    <li class='paper'>
+                        <span class='title'>openCypher over RDF for Neptune Analytics</span>
+                        <span class='authors'>Willem Broekema (<strong>Amazon</strong>)</span>
+                    </li>                </ul>
+            </p>
+            <div class="separator">Lunch Break (120 mins)</div>
+            <p class='session'>
+                <span class='time'>02:00 PM - 03:30 PM</span>
+                <span class='stitle'>Paper Presentations</span>
+                <ul>
+                    <li class='paper'>
+                        <span class='title'><a title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3661304.3661901">A Benchmark to Understand the Role of Knowledge Graphs on Large Language Model’s Accuracy for Question Answering on Enterprise SQL Databases</a></span>
+                        <span class='authors'>Juan F. Sequeda, Dean Allemang, and Bryon Jacob</span>
+                    </li>
+                    <li class='paper'>
+                        <span class='title'><a title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3661304.3661902">HomeRun: A Cardinality Estimation Advisor for Graph Databases</a></span>
+                        <span class='authors'>Wilco van Leeuwen, George H. L. Fletcher, and Nikolay Yakovets</span>
+                    </li>
+                    <li class='paper'>
+                        <span class='title'><a title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3661304.3661899">TelarKG: a Knowledge Graph of Chile's Constitutional Process</a></span>
+                        <span class='authors'>Renzo Angles, Vicente Calisto, Javiera Díaz, Sebastián Ferrada, Aidan Hogan, Alexander Pinto, Juan Reutter, Carlos Rojas, Henry Rosales-Méndez, Hernan Sarmiento, Etienne Toussaint, and Domagoj Vrgoc</span>
+                    </li>
+                </ul>
+            </p>
+            <div class="separator">Coffee Break (30 mins)</div>
+            <p class='session'>
+                <span class='time'>04:00 PM - 04:30 PM</span>
+                <span class='stitle'>Paper Presentation</span>
+                <ul>
+                    <li class='paper'>
+                        <span class='title'><a title="Full Citation in the ACM Digital Library" referrerpolicy="no-referrer-when-downgrade" href="https://dl.acm.org/doi/10.1145/3661304.3661900">Scaling Differential Computation for Large-Scale Graph Processing</a></span>
+                        <span class='authors'>Siddhartha Sahu and Semih Salihoglu</span>
+                    </li>
+                </ul>
+            </p>
+            <p class='session'>
+                <span class='time'>04:30 PM - 05:30 PM</span>
+                <span class='stitle'>Invited Talk: <em>"PODS Goes Practical: Can Database Theory be of any use for Building Graph Systems?"</em> by Domagoj Vrgoč (Pontificia Universidad Católica de Chile)</span>
+                <span style="display: block; margin-top: 0.5em; font-size: smaller; line-height: 1.4em;"><b>Abstract:</b> In this talk we will present our experience of what it takes to implement core theoretical findings inside of a working graph database engine. To do so, we will present how MillenniumDB, the engine built at IMFD Chile, uses the idea of worst-case optimal algorithms and automata-based path search to efficiently evaluate important classes of graph queries. The presentation will focus on the main challenges that an implementer faces when adapting theoretical work and try to give some insight on how these approaches fit into a classical database architecture, or how to adapt them for alternative storage models. During the presentation we will try to give a wider overview of the class of enumeration algorithms and discuss why these might be a good theoretical framework for algorithms that are implementable and have the potential to perform well in practice.
+                </span>
+            </p>
+            <div class="separator">End of the workshop at 5:30 PM</div>
+
+        </div>
+    </section>
+
+<!--
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="accepted"></a>Accepted Papers</h2>
+            <p>The following papers have been accepted for this year's workshop.</p>
+            <ul>
+                <li><strong>Understanding High-Performance Subgraph Pattern Matching: A Systems Perspective</strong><br/>Akshit Sharma, Dinesh Mehta, and Bo Wu</li>
+                <li><strong>Space &amp; Time Efficient Leapfrog Triejoin</strong><br/>Diego Arroyuelo, Daniela Campos, Adrián Gómez Brandón, Gonzalo Navarro, Carlos Rojas, and Domagoj Vrgoc</li>
+                <li><strong>TelarKG: a Knowledge Graph of Chile's Constitutional Process</strong><br/>Renzo Angles, Vicente Calisto, Javiera Díaz, Sebastián Ferrada, Aidan Hogan, Alexander Pinto, Juan Reutter, Carlos Rojas, Henry Rosales-Méndez, Hernan Sarmiento, Etienne Toussaint, and Domagoj Vrgoc</li>
+                <li><strong>Scaling Differential Computation for Large-Scale Graph Processing</strong><br/>Siddhartha Sahu and Semih Salihoglu</li>
+                <li><strong>A Benchmark to Understand the Role of Knowledge Graphs on Large Language Model’s Accuracy for Question Answering on Enterprise SQL Databases</strong><br/>Juan F. Sequeda, Dean Allemang, and Bryon Jacob</li>
+                <li><strong>HomeRun: A Cardinality Estimation Advisor for Graph Databases</strong><br/>Wilco van Leeuwen, George H. L. Fletcher, and Nikolay Yakovets</li>
+            </ul>
+        </div>
+    </section>
+-->
+
+<!--
+    <section class="row">
+        <div class="col-full">
+            <h2>Call for Papers</h2>
+            <p> The goal of GRADES-NDA is to bring together researchers from academia, industry, and government (1) to
+                create a forum for discussing recent advances in (large-scale) graph data management and graph analytics
+                systems, as well as propose and discuss novel methods and techniques towards (2) addressing domain-specific challenges or (3) handling noise in real-world graphs.</p>
+            <p>The workshop will be of interest to researchers in the development of novel data-management applications
+                and systems for large-scale graph analytics. More specifically, the intended audience are, but not
+                limited to, academic and industrial computer scientists interested in databases and data mining, machine
+                learning, data streaming, graph theory and algorithms. Along with novel research work, we encourage
+                submissions with demonstrations and case studies from real-life experiences in various domains such as
+                Social Networks, Biological Network Data, Marketing and Media, Business Data Analysis, Healthcare Data,
+                Cybersecurity etc.
+            </p>
+            <p>Topics of interest include but are not limited to the following.</p>
+            <ul>
+                <li>Graph query languages, visualization techniques and querying interfaces, and their effective realization</li>
+                <li>Graph platform and parallel platforms,  e.g., Flink/Gelly, Titan, SPARK/GraphX, GraphLab/PowerGraph, Giraph, GraphChi etc.</li>
+                <li>Network data representation, storage, indexing and querying methods.</li>
+                <li>Experiences or techniques for graph specific operations such as traversals or inference/reasoning in the context of large data sets and on the systems that implement those operations.</li>
+                <li>RDF data management and analytics</li>
+                <li>Dynamic Graphs: managing graph updates; graph stream analytics; analyzing evolution and detection of community structures in real-world evolving graphs</li>
+                <li>Mining and machine learning on heterogeneous networks -- knowledge graphs etc.</li>
+                <li>Graph summarization and sampling</li>
+                <li>Game Theory, Social contagion and Information propagation on networks</li>
+                <li>Analytics on dirty, noisy, or uncertain graphs</li>
+                <li>Spatial and temporal graph analytics</li>
+                <li>Analytics on social, biological, retail, marketing, customer care, financial, healthcare, transportation network data sets</li>
+                <li> Descriptions of graph data management use cases and query workloads, and experiences with applying data management technologies in such situations</li>
+                <li>Vision and systems papers describing potential or real applications and benefits of graph management, in particular (but not only) in the age of large language models (LLMs)</li>
+            </ul>
+            <br>
+            <p> Accepted papers will be published by ACM, indexed by DBLP, and will be available in the ACM DL.</p>
+        </div>
+    </section>
+-->
+
+	<section class="row">
+		<div class="col">
+			<h2><a id="dates"></a>Important Dates</h2>
+			<ul>
+                <li>Abstract Submission: <strike>March 8</strike> March 15, 2024</li>
+                <li>Paper Submission: <strike>March 15</strike> March 22, 2024</li>
+                <li>Notifications: April 19, 2024</li>
+                <li>Camera Ready Submission: May 10, 2024</li>
+                <li>Workshop Date: June 14, 2024</li>
+			</ul>
+			<p></p>
+			<i>All deadlines are 23:59 Hours AoE</i>
+            <p></p>
+		</div>
+		<div class="col">
+			<h2>Workshop Organizers</h2>
+			<ul>
+                <li><a href="http://olafhartig.de/">Olaf Hartig</a>, Amazon Web Services &amp; Link&ouml;ping University, Sweden</li>
+                <li><a href="http://itu.dk/~zoka/">Zoi Kaoudi</a>, IT University of Copenhagen, Denmark</li>
+			</ul><br>
+			<h2>Steering Committee</h2>
+			<ul>
+                <li><a href="https://cs.uwaterloo.ca/~ssalihog/">Semih Salihoglu</a>, University of Waterloo, Canada</li>
+				<li><a href="https://cs-people.bu.edu/vkalavri/">Vasiliki Kalavri</a>, Boston University, US</li>
+                <li><a href="https://dlab.epfl.ch/people/aarora/">Akhil Arora</a>, EPFL, Switzerland</li>
+                <li><a href="https://www.tue.nl/en/research/researchers/george-fletcher/">George Fletcher</a>, TU Eindhoven, The Netherlands</li>
+			</ul>
+		</div>
+	</section>
+
+<!--
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="submission"></a>Paper Submission</h2>
+            <p>Authors are invited to submit original, unpublished research papers (full and short), demonstrations and case-studies. </p>
+            <p>Submissions must follow the latest 2-column ACM Proceedings format using the latest <a href="https://www.acm.org/publications/proceedings-template">ACM Primary Article Template</a>, and have to be anonymous. </p>
+            <p>Reviewing will be double-anonymous, for which the submissions must be anonymized by following the same anonymity requirements as for <a href="https://2024.sigmod.org/calls_papers_sigmod_research.shtml">regular track papers at the SIGMOD 2024 conference</a>. Use the following latex command to compile your paper without author names: <code>\documentclass[sigconf, anonymous, review]{acmart}</code>.</p>
+            </p>
+            <p>Length Requirements:</p>
+            <ul>
+                <li>Full papers should be a maximum of 8 pages in length, excluding references and appendix.</li>
+                <li>Case studies should be a maximum of 4 pages in length, excluding references and appendix.</li>
+                <li>Short papers and demonstration papers should be a maximum of 4 pages in length, excluding references and appendix.</li>
+            </ul>
+            <p>Submissions that do not follow these requirements will be rejected immediately.</p>
+            <br/>
+            <p>Submissions will be handled through Easychair.
+            To submit click <a href="https://easychair.org/conferences/?conf=gradesnda2024">here</a>.
+            </p>
+        </div>
+    </section>
+-->
+
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="pc"></a>Program Committee</h2>
+            <ul>
+<li>	Renzo	Angles,	Universidad de Talca	</li>
+<li>	Marcelo	Arenas,	PUC Chile	</li>
+<li>	Amitabha	Bagchi,	Indian Institute of Technology, Delhi	</li>
+<li>	Kaustubh	Beedkar,	IIT Delhi	</li>
+<li>	Yang	Cao,	The University of Edinburgh	</li>
+<li>	Nathalie	Charbel,	Neo4j	</li>
+<li>	Juan	Colmenares,	Microsoft	</li>
+<li>	Sourav	Dutta,	Huawei Research	</li>
+<li>	George H. L.	Fletcher,	Eindhoven University of Technology	</li>
+<li>	Russ	Harmer,	CNRS & ENS Lyon	</li>
+<li>	Jan	Hidders,	Birkbeck College, University of London	</li>
+<li>	Davide	Mottin,	Aarhus University	</li>
+<li>	Nikos	Ntarmos,	Huawei Technologies R&D (UK) Ltd	</li>
+<li>	Evaggelia	Pitoura,	Univ. of Ioannina	</li>
+<li>	Petra	Selmer,	Bloomberg	</li>
+<li>	Marco	Serafini,	University of Massachusetts Amherst	</li>
+<li>	Hiroaki	Shiokawa,	University of Tsukuba	</li>
+<li>	Vasileios	Trigonakis,	Oracle Labs	</li>
+<li>	Hannes	Voigt,	Neo4j	</li>
+<li>	Yinghui	Wu,	Case Western Reserve University	</li>
+<li>	Yinglong	Xia,	Facebook	</li>
+<li>	Yuichi	Yoshida,	National Institute of Informatics	</li>
+<li>	Shangdi	Yu,	MIT	</li>
+
+            </ul>
+        </div>
+    </section>
+
+
+<!--
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="travel"></a>Student Travel Awards</h2>
+            <p>Thanks to the generous support of our Sponsors, we are offering awards for selected students to attend GRADES-NDA and SIGMOD in person. 
+		    Each awardee will receive a stipend to partially cover the expense to attend the conference in-person. 
+		    Awardees are expected to register to SIGMOD in-person full conference and attend the GRADES-NDA Workshop 
+		    and later the SIGMOD conference. Students will have to make their own arrangements for travel and accommodation. 
+		    These awards are only for students who can attend in person. 
+		    If you cannot attend in person, we advise you to check with <a href="https://2023.sigmod.org/grants.shtml">the SIGMOD travel awards committee</a>.</p>
+            <p><b>Eligibility:</b> Applicants need to be a full-time undergraduate or graduate student. 
+		    You  do not need to have an accepted paper to GRADES-NDA (or SIGMOD) to be eligible. 
+		    We will primarily prioritize students whose advisors cannot provide financial support. 
+		    We will also prioritize students who have a GRADES-NDA accepted paper, who are not from North America and Europe, 
+		    as well as female and minority students. </p>
+            <p><b>Application Procedure:</b> To apply for a grant, the student must email the necessary materials to GRADES-NDA chairs 
+		    (please email both Olaf and Yuichi) by <b>April 22</b>. We will notify applicants by <b>April 29</b>.
+            Please submit the following information in a single PDF file with your application:</p>
+            <ul>
+                <li>Your full name, school, and email address.</li>
+                <li>Your advisor's full name and email address.</li>
+                <li>Your CV.</li>
+                <li>An abstract, summarizing your thesis research and its connection to graph data management or graph analytics (at most one page in single column format).</li>
+                <li>If you think your presence could help diversity in the GRADES-NDA or SIGMOD community (in terms of the gender, geography/origin, ethnicity or in other ways), please add an additional paragraph with an explanation (does not count towards the one-page limit for your research).</li>
+            </ul>
+        </div>
+    </section>
+-->
+
+    <section class="row">
+        <h2 id="previous">Past Workshops</h2>
+        <p>GRADES-NDA is in its seventh edition, and had successful joint meetings co-located with ACM SIGMOD/PODS from 2018 to 2023. Specifically, it is the merger of the GRADES and NDA workshops, which were each independently organized and successfully held at previous ACM SIGMOD/PODS conferences, GRADES since 2013 and NDA since 2016. The organizers of GRADES and NDA mutually agreed upon to aim for a joint meeting from 2018 onwards.</p>
+        <div class="col" style="width:30%">
+            <h2>GRADES-NDA</h2>
+            <ul>
+                <li><a href="http://gradesnda.github.io/2023/">GRADES-NDA 2023</a></li>
+                <li><a href="http://gradesnda.github.io/2022/">GRADES-NDA 2022</a></li>
+                <li><a href="http://gradesnda.github.io/2021/">GRADES-NDA 2021</a></li>
+                <li><a href="http://gradesnda.github.io/2020/">GRADES-NDA 2020</a></li>
+                <li><a href="https://sites.google.com/site/gradesnda2019/">GRADES-NDA 2019</a></li>
+                <li><a href="https://sites.google.com/site/gradesnda2018/">GRADES-NDA 2018</a></li>
+            </ul>
+        </div>
+        <div class="col" style="width:30%">
+            <h2>GRADES</h2>
+            <ul>
+                <li><a href="https://event.cwi.nl/grades/2017/index.shtml">GRADES 2017</a></li>
+                <li><a href="https://event.cwi.nl/grades/2016/index.shtml">GRADES 2016</a></li>
+                <li><a href="https://event.cwi.nl/grades/2015/index.shtml">GRADES 2015</a></li>
+                <li><a href="https://event.cwi.nl/grades/2014/index.shtml">GRADES 2014</a></li>
+                <li><a href="https://event.cwi.nl/grades/2013/index.shtml">GRADES 2013</a></li>
+            </ul>
+        </div>
+        <div class="col" style="width:30%">
+            <h2>NDA</h2>
+            <ul>
+                <li><a href="https://sites.google.com/site/networkdataanalytics2017/">NDA 2017</a></li>
+                <li><a href="https://sites.google.com/site/networkdataanalytics2016/">NDA 2016</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2 id="sponsors">Sponsored by</h2>
+            <div class="photo-grid">
+<!--                 <a href="https://neo4j.com/" class="col-3"><img src="img/neo4j-logo.png" alt="Neo4j"></a> -->
+                <a href="https://www.amazon.com/" class="col-3"><img src="img/amazon-logo.png" alt="Amazon"></a>
+                <a href="https://www.sap.com/index.html" class="col-3"><img src="img/sap-logo.png" alt="SAP"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full-b">
+            <h2>Get in touch</h2>
+            <p>
+                For questions, please <a href="mailto:gradesnda2024@easychair.org">email</a>. Follow us on <a href="https://twitter.com/gradesnda">X (formerly Twitter)</a> for latest updates about the workshop.
+            </p>
+        </div>
+    </section>
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        document.write('<script src="js/vendor/jquery.1.11.min.js"><\/script>');
+    }
+</script>
+
+<script src="js/vendor/jquery.fluidbox.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'YOUR_GOOGLE_ANALYTICS_ID', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
+
+<!-- © 2014 - Based on free website template by <a href="http://www.pixelsbyrick.com">Rick Waalders</a> -->
