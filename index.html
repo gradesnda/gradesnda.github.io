@@ -11,7 +11,18 @@
 
     <title>GRADES-NDA 2025</title>
     <style>
-        p {text-align: justify;}
+        p {
+            text-align: justify;
+        }
+        .photo-grid {
+            display: flex;
+            align-items: center;
+        }
+        .photo-grid a.col-4 {
+            width: 24%;
+            width: calc(25% - 16px);
+            vertical-align: center;
+        }
     </style>
 </head>
 <body>
@@ -281,8 +292,10 @@
             <h2 id="sponsors">Sponsored by</h2>
             <div class="photo-grid">
 <!--                 <a href="https://neo4j.com/" class="col-3"><img src="img/neo4j-logo.png" alt="Neo4j"></a> -->
-                <a href="https://www.amazon.com/" class="col-3"><img src="img/amazon-logo.png" alt="Amazon"></a>
-                <a href="https://www.sap.com/index.html" class="col-3"><img src="img/sap-logo.png" alt="SAP"></a>
+                <a href="https://www.amazon.com/" class="col-4"><img src="img/amazon-logo.png" alt="Amazon" width="200"></a>
+                <a href="https://www.bloomberg.com" class="col-4"><img src="img/logo-bloomberg.svg" alt="Bloomberg" width="200"></a>
+                <a href="https://relational.ai/" class="col-4"><img src="img/Logo-RAI-Color-4x.png" alt="RelationalAI"  width="300"></a>
+                <a href="https://www.sap.com/" class="col-4"><img src="img/sap-logo.png" alt="SAP" width="150" style="padding-left: 2em"></a>
             </div>
         </div>
     </section>
