@@ -1,0 +1,620 @@
+Ana<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/vendor/fluidbox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>GRADES-NDA 2025</title>
+    <style>
+        p {
+            text-align: justify;
+        }
+        .photo-grid {
+            display: flex;
+            align-items: center;
+        }
+        .photo-grid a.col-4 {
+            width: 24%;
+            width: calc(25% - 16px);
+            vertical-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+   
+    
+    
+    <div>
+        <a href="/"><img src="img/grades_nda_v3_twitter.png" alt="Example photo" style="width:13%; margin-right: 1em;"></a>
+        <a href="/"><img src="img/logo-berlin.jpg" alt="GRADES-NDA" style="width:80%"></a>
+    </div>
+    <div id="title-container">8th Joint Workshop on Graph Data Management
+        Experiences &amp; Systems (GRADES) and Network Data Analytics (NDA)
+    </div>
+    <div id="subtitle-container"> Co-located with <a href="https://2026.sigmod.org/"> SIGMOD/PODS 2025 </a> (June 27, 2025, Berlin, Germany)
+    </div>
+    <br/>&nbsp;
+    <div>
+        <a href="https://bsky.app/profile/grades-nda.bsky.social"><img src="img/logo-bluesky.png" alt="BlueSky logo" width="28" height="28"> Follow @grades-nda.bsky.social</a>
+        <!-- <a href="https://twitter.com/gradesnda?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @gradesnda</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+    </div>
+    <nav>
+        <ul>
+           <li><a href="#accepted" class="bordered">Accepted Papers</a></li> 
+<!--             <li><a href="#">Registration</a></li>-->
+            <li><a href="#dates">Important Dates</a></li>
+            <li><a href="#program" class="bordered">Program</a></li>
+<!--             <li><a href="https://dl.acm.org/doi/proceedings/10.1145/3461837" class="bordered">Proceedings</a></li> -->
+<!--             <li><a href="#submission">Paper Submission</a></li> -->
+            <li><a href="#pc">Program Committee</a></li>
+<!--             <li><a href="#travel">Travel Awards</a></li> -->
+            <li><a href="#previous">Past Workshops</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+       </ul>
+    </nav>
+</header>
+
+<div id="content">
+
+    <section class="row">
+        <div class="col-full">
+            <h2>Call for Papers</h2>
+            <p> The GRADES-NDA workshop explores the challenges, application areas, and usage scenarios of managing large-scale graphs.  
+	        It provides a forum for exchanging ideas on mining, querying, and learning from real-world network data, fostering interdisciplinary collaboration, and sharing datasets and benchmarks. 
+	    <!--    The workshop highlights technical contributions in graph data management systems, emphasizing practical implementations over isolated techniques.	 -->   
+	    </p>
+            <p> GRADES-NDA brings together researchers from academia, industry, and government to discuss advances in large-scale graph data management and analytics. Its scope covers
+                domain-specific challenges, noise handling in real-world graphs, and innovations in databases, data mining, machine learning, data streaming, 
+                network science, and graph algorithms. Case studies across diverse areas are welcome, including Social Networks, Business Analytics, Healthcare, 
+                and Cybersecurity.
+            </p>
+            <p>Topics of interest include but are not limited to the following.</p>
+            <ul>
+                <li>Graph modeling and processing  &ndash;  advances in representing, visualizing, storing, indexing, querying, and managing graph data.</li>
+                <li>Graph query languages, visualization, and querying interfaces  &ndash;  design, usability, practical implementations, and use cases.</li>
+                <li>Knowledge Graphs  &ndash;  construction, augmentation, reasoning, and neuro-symbolic approaches.</li>
+                <li>GenAI techniques &ndash;  integration of Knowledge Graphs and LLMs for information retrieval, question answering, knowledge inference, and natural language understanding.</li>
+                <li>Graph processing platforms  &ndash;  including Titan, Giraph, GraphChi, SPARK/GraphX, GraphLab/PowerGraph, and others.</li>
+                <li>Human-centric graph processing  &ndash;  interactive approaches for graph data exploration, querying, and analytics.</li>
+                <li>Reliable graph data processing &ndash; validation and verification techniques for ensuring the trustworthiness of algorithms, query languages, applications, and systems.</li>
+                <li>Graph metrics  &ndash;  methods for measuring graph characteristics, e.g., diameter, eigenvalues, triangle counting.</li>
+                <li>Spatial and temporal graph analytics  &ndash;  updates, dynamic graphs, streaming analytics, evolution tracking, point-of-interest recommendation, community structure detection, etc.</li>
+                <li>Graph mining and machine learning  &ndash;  including heterogeneous networks and knowledge graphs.</li>
+                <li>Graph summarization and sampling  &ndash;  efficient methods for large-scale data.</li>
+                <li>Noisy and uncertain graphs  &ndash;  analytics on incomplete, inconsistent, or unreliable data.</li>
+                <li>Network dynamics  &ndash;  game theory, social contagion, and information propagation.</li>
+                <li>Domain-specific graph analytics  &ndash;  applications in social networks, biology, business, finance, healthcare, transportation, etc.</li>
+                <li>Vision and systems papers  &ndash;  potential or real applications of graph management, especially in the era of large language models.</li>
+            </ul>
+            <br>
+            <p> Accepted archival papers will be published by ACM, indexed by DBLP, and will be available in the ACM DL.</p>
+        </div>
+    </section>
+
+<!--
+     \item \emph{Graph modeling and processing}: Advances in techniques for representing, visualizing, storing, indexing, querying, and managing graph data.
+ \item \emph{RDF and Graph Databases:}
+   \begin{itemize}
+       \item Data and/or index structures.
+       \item Proposals of benchmarks for RDF and graph database workloads and their performance evaluation on diverse data management systems.     
+       \item Query processing and optimization algorithms for RDF and graph database systems.
+       \item System descriptions.
+   \end{itemize}
+ \item \emph{Dynamic and temporal graphs}: 
+  \begin{itemize}
+       \item Efficient and reliable change updates in graph data.
+       \item Managing evolving networks and their applications.
+       \item Analysing evolution and detection of community structures in real-world graphs.
+       \item Spatio-temporal graph analytics.
+   \end{itemize}
+ \item \emph{Graph metrics}: Methods for measuring graph characteristics, e.g., diameter, eigenvalues, triangle counting.
+ \item \emph{Scalable graph processing}: Innovations in technologies for large-scale graph analytics.
+ \begin{itemize}
+    \item \emph{Core graph platforms and parallel computing frameworks}: Exploration of graph processing platforms and parallel computing technologies, e.g., Titan, Giraph, GraphChi, SPARK/GraphX, GraphLab/PowerGraph, with a focus on scalability, performance optimization, and practical applications.
+    \item \emph{Mining and machine learning on heterogeneous networks}: Techniques for extracting insights and patterns from heterogeneous networks, with applications in clustering, link prediction, anomaly detection, representation learning, etc.
+    \item Experiences or techniques for graph-specific operations such as traversals or inference/reasoning in the context of large data sets and on the systems that implement those operations.
+    \item Graph summarization and sampling
+ \end{itemize}
+ \item \emph{Human-centric graph processing: Interactive} techniques and human-in-the-loop approaches to enhance graph data exploration, querying, and analytics.
+ \item \emph{GenAI techniques}: Integration of Knowledge Graphs and Large Language Models for information retrieval, question answering, knowledge inference, and natural language understanding.
+ \item \emph{Neuro-symbolic approaches}: Hybrid techniques that combine Graph Neural Networks (GNNs) with rule-based systems for reasoning and analytics.
+ \item \emph{Reliability and security}: Verification and validation tools and techniques for trustworthy graph data processing, as well as security aspects, such as differential privacy and blockchain/graph-based ledgers. 
+ \item \emph{Education}: Best practices for teaching emerging graph technologies, experience reports from educators, and innovative approaches to training students and practitioners.
+  \item \emph{Applications}: Descriptions of graph data management use cases and query workloads, and experiences with applying data management technologies in various areas, including but not limited to:
+ \begin{itemize}
+     \item Social Networks; Citation Networks; Co-Purchase Networks
+     \item Game Theory, Social contagion and Information propagation on networks
+     \item Biological Network Data; Ecological data
+     \item Retail, Marketing, and Media
+     \item Financial Services and Business Data Analysis
+     \item Customer Care; Healthcare; Transportation data
+     \item Cybersecurity
+ \end{itemize}
+ \item \emph{Vision papers} describing potential applications and benefits of graph management.
+-->
+
+<section class="row">
+		<div class="col-full">
+			<h2><a id="accepted"></a>Accepted Papers (Archival)</h2>
+			<ul>
+		<li>Naima Abrar Shami and Vasiliki Kalavri.<br> <b>Bridging GNN Inference and Dataflow Stream Processing: Challenges and Opportunities</b>.</li>
+		<li>Bishwajit Bhattacharjee, Nafis Ahmed, Sujaya Maiyya, and Renee Miller. <br> <b>Towards Oblivious Property Graph Databases</b>.</li>
+		<li>Simon Grätzer, Lars Heling, and Pavel Klinov.<br> <b>BARQ: A Vectorized SPARQL Query Execution Engine</b>.</li>
+                <li>Janik Hammerer and Wim Martens.<br> <b>A Compendium of Regular Expression Shapes in SPARQL Queries</b>.</li>
+		<li>Leonid Libkin, Cristina Sirangelo, and Deniz Yilmaz.<br> <b>Extending Pattern Matching Queries in Property Graphs with Interpreted Predicates</b>.</li>
+		<li>Hrishikesh Terdalkar, Angela Bonifati, and Andrea Mauri.<br> <b>Graph Repairs with LLMs: An Empirical Study</b>.</li>
+		<li>Chongyang Xu and Laurent Bindschaedler.<br> <b>Everything You Wanted to Know About Graph Neural Network Partitioning (But Were Afraid to Ask)</b>.</li>
+		<li>Hadar Rotschield and Liat Peterfreund.<br> [Short Research Paper] <b>Towards Cross-Model Efficiency in SQL/PGQ</b>.</li>
+			</ul> <br>
+
+			<h2>Accepted Papers (Non-Archival)</h2>
+			<ul>
+			<li>Shaoshuai Du, Joze Rozanec, Ana Lucia Varbanescu, and Andy D. Pimentel.<br> <b>Understanding Streaming Graph Processing Systems: a Comparative Study of Models, Performance, and Trade-offs</b>.</li>
+			<li>Cheng Huang, Johannes Langguth, Davide Mottin, and Ira Assent.<br>  <b>GCore: A Fast GPU-parallelized Approach to D-Core Decomposition</b>.</li>
+			<li>Dmytro Lopushanskyy and Borun Shi.<br>  <b>Graph Neural Networks on Graph Databases</b>.</li>
+			<li>Larissa Shimomura, George Fletcher, Hiroaki Shiokawa, Toshiyuki Amagasa, and Md Abu Marjan.<br>  <b>Towards Documentation Guidelines for Property Graphs</b>.</li>
+			<li>Srinitish Srinivasan and Omkumar Cu.<br>  <b>Lorentzian Graph Isomorphic Network</b>.</li>
+			</ul>
+</div>
+</section>
+
+<section class="row">
+    <div class="col-full">
+        <h2>Keynote Speakers</h2>
+        <p> We are honored to have the following keynote speakers to talk about their exciting research in the broad fields of network science and of graph data management.</p>
+        <ul>
+            <li><a href="https://www.cirocattuto.info/">Ciro Cattuto</a>&nbsp;  ISI Foundation</li>
+            <li><a href="https://web.eecs.umich.edu/~dkoutra/">Danai Koutra</a>&nbsp; University of Michigan, Amazon Scholar</li>
+            <li><a href="http://libk.in/">Leonid Libkin</a>&nbsp; University of Edinburgh, IRIF, RelationalAI</li>
+        </ul>
+    </div>
+</section>
+
+<section class="row">
+    <div class="col-full">
+        <h2><a id="program"></a>Program</h2>
+        <p style="color:gray"><i>All times are in CET (Central European Time, UTC/GMT + 1 hour).</i></p>
+        <p class="session">
+        <div class="separator"><b>Opening remarks bright and early at 8AM</b></div>
+        </p>
+
+        <p class="session">
+            <span class="time">8:15-8:55</span>
+            <span class="stitle">Session 1</span>
+        </p>
+        <ul>
+            <li class="paper">
+                <span class="title">[8:15-8:30] Everything You Wanted to Know About Graph Neural Network Partitioning (But Were Afraid to Ask).</span>
+                <span class="authors">Chongyang Xu and Laurent Bindschaedler.</span>
+            </li>
+            <li class="paper">
+                <span class="title">[8:30-8:45] Bridging GNN Inference and Dataflow Stream Processing: Challenges and Opportunities.</span>
+                <span class="authors">Naima Abrar Shami and Vasiliki Kalavri.</span>
+            </li>
+            <li class="paper">
+                <span class="title">[8:45-8:55] GCore: A Fast GPU-parallelized Approach to D-Core Decomposition.</span>
+                <span class="authors">Cheng Huang, Johannes Langguth, Davide Mottin, and Ira Assent.</span>
+            </li>
+         </ul>
+
+        <p class="session">
+            <div class="separator">Quick break (5 mins)</div>
+        </p>
+
+        <p class="session">
+            <span class="time">9:00-09:45</span>
+            <span class="stitle">A Decade of Measuring and Modeling Human Proximity Networks: Lessons Learned and Open Challenges - <i>Ciro Cattuto</i></span><img src="img/ciro.jpeg" alt="" height="200" width="185" id="bio-pic" />
+            <span class="abstract"><b>Abstract:</b> 
+                Digital technologies allow us to quantify many important human behaviors and have revolutionized how we think about human mobility, opening new avenues for research in computational social science, urban mobility, epidemiology, and more. This talk will focus on human proximity networks measured using wearable proximity sensors, reviewing the decade-long experience of the SocioPatterns collaboration. We will discuss the evolution and state of the art of measurement technology and the lessons learned from more than a decade of data collection experiences in various real-world environments, including schools, hospitals, households, low-resource rural settings, and more. We will illustrate the complex features and emergent patterns of time-resolved proximity networks and discuss how ideas and methods from network science and machine learning can support their modeling in important application scenarios. We will highlight open challenges in the low-dimensional representation of time-resolved interaction networks and in the development of generative models of realistic interaction data.
+            </span>
+            <span class="bio"><b>Speaker bio:</b> 
+                Ciro Cattuto is the Scientific Director of the ISI Foundation, a non-profit research institute based in Turin, Italy, that focuses on data science, complex systems, and their applications to public health and social impact. He holds a Ph.D. in Physics from the University of Perugia and has conducted research at the University of Michigan (USA), the Enrico Fermi Center (Rome), and the Frontier Research System of RIKEN (Japan). He was an Associate Professor in the Department of Computer Science at the University of Torino, served as an Expert for the Italian Department of Digital Transformation, and sat on the COVID-19 Data Task Force of the Italian Ministry of Innovation. Ciro Cattuto is a founder and principal investigator of SocioPatterns, a long-running international collaboration that measures and models human proximity networks using wearable sensors.
+            </span>
+        </p>
+
+        <p class="session">
+            <span class="time">9:45-10:30</span>
+            <span class="stitle">Session 2</span>
+        </p>
+        <ul>
+            <li class="paper">
+                <span class="title">[9:45-10:00] Extending Pattern Matching Queries in Property Graphs with Interpreted Predicates.</span>
+                <span class="authors">Leonid Libkin, Cristina Sirangelo, and Deniz Yilmaz.</span>
+            </li>
+            <li class="paper">
+                <span class="title">[10:00-10:15] Graph Repairs with LLMs: An Empirical Study.</span>
+                <span class="authors">Hrishikesh Terdalkar, Angela Bonifati, and Andrea Mauri.</span>
+            </li>
+            <li class="paper">
+                <span class="title">[10:15-10:30] Towards Oblivious Property Graph Databases.</span>
+                <span class="authors">Bishwajit Bhattacharjee, Nafis Ahmed, Sujaya Maiyya, and Renee Miller.</span>
+            </li>
+        </ul>
+
+        <p class="session">
+        <div class="separator">Coffee Break + free-roam posters (30 mins)</div>
+        </p>
+
+        <p class="session">
+            <span class="time">11:00-11:45</span>
+            <span class="stitle">Not all Neighbors Agree: Graph Learning Beyond Homophily - <i>Danai Koutra</i></span><img src="img/danai.jpeg" alt="" width="200" height="222" id="bio-pic-2" />
+            <span class="abstract"><b>Abstract:</b> 
+                Graph neural networks (GNNs) have become a cornerstone of graph-based machine learning, demonstrating strong performance across a variety of applications spanning recommendation systems, molecular analysis, and social networks. While a wide variety of GNN models have been proposed, most of them perform best in graphs that exhibit the property of homophily, in which linked nodes often belong to the same class or have similar features, echoing the adage “birds of a feather flock together”. 
+                In this talk, I will present our recent advances in understanding and improving GNNs in the presence of heterophily. I will introduce effective GNN designs for node classification and link prediction, and present a learnable variant of Laplacian positional encodings that generalizes to heterophilic graphs and improves performance across a range of architectures, including graph transformers. Beyond static node classification, I will introduce a dynamic homophily metric that more accurately correlates with GNN performance on dynamic graphs. I will then discuss how heterophily relates to core challenges such as oversmoothing and robustness. Moving beyond global homophily, I will demonstrate how local homophily variations can lead to performance disparities across node groups, ultimately resulting in unfair predictions. I will conclude with a retrospective on the field’s progress over the past five years and outline directions for future research.
+            </span>
+            <span class="bio"><b>Speaker bio:</b> 
+                Danai Koutra is an Associate Professor of Computer Science and Engineering at the University of Michigan and an Amazon Scholar. Her research interests include graph mining and learning, graph–LLM joint models, and graph summarization. Her work has been applied to social, collaboration, and web networks, as well as brain connectivity graphs. Danai has won the Presidential Early Career Award for Scientists and Engineers (PECASE), the 2024 IBM Early Career Data Mining Research Award, the 2023 Tao Li Award, an NSF CAREER Award, an ARO Young Investigator Award, the 2020 SIGKDD Rising Star Award, multiple industry-sponsored research faculty awards, a Precision Health Investigator Award, and the 2016 ACM SIGKDD Dissertation Award. She has also received nine paper awards and the 2022 IEEE ICDM Test-of-Time Award. In terms of service, she is currently Program Chair for the IJCAI 2025 Survey Track and has previously served as Program Chair for ACM SIGKDD, ECML/PKDD, and The Web Conference (track chair).
+            </span>
+        </p>
+
+        <p class="session">
+            <div class="separator">Quick Break (5 mins)</div>
+        </p>
+
+        <p class="session">
+            <span class="time">11:50-12:30</span>
+            <span class="stitle">Session 3</span>
+        </p>
+        <ul>
+            <li class="paper">
+                <span class="title">[11:50-12:05] A Compendium of Regular Expression Shapes in SPARQL Queries.</span>
+                <span class="authors">Janik Hammerer and Wim Martens.</span>
+            </li>
+            <li class="paper">
+                <span class="title">[12:05-12:20] BARQ: A Vectorized SPARQL Query Execution Engine.</span>
+                <span class="authors">Simon Grätzer, Lars Heling, and Pavel Klinov.</span>
+            </li>
+            <li class="paper">
+                <span class="title">[12:20-12:30] Towards Cross-Model Efficiency in SQL/PGQ.</span>
+                <span class="authors">Hadar Rotschield and Liat Peterfreund.</span>
+            </li>
+        </ul>
+
+        <p class="session">
+            <div class="separator">Lunch + free-roam posters (1h30 mins)</div>
+        </p>
+
+        <p class="session">
+            <span class="time">14:00-15:00</span>
+            <span class="stitle">GQL in academia: a progress report - <i>Leonid Libkin</i></span><img src="img/leonid.jpeg" alt="" width="200" height="222" id="bio-pic-2" />
+            <span class="abstract"><b>Abstract:</b> 
+                The GQL standard was introduced just over a year ago, following the earlier release of SQL/PGQ — both based on a shared graph pattern-matching. Their design was primarily driven by industry, with academia largely responding in its wake. In the short time that was available, we have created formal models of GQL and PGQ, differing in how closely they adhere to the standards, and used them to analyze both languages. This talk will provide an overview of these models and recent insights into the expressive power of GQL queries, pointing out current limitations and suggesting research directions for future improvements of graph query standards.
+            </span>
+            <span class="bio"><b>Speaker bio:</b> 
+                Leonid Libkin is a professor of computer science at the University of Edinburgh and query language researcher at RelationalAI; he is also holding part-time industrial chair position at Université Paris-Cité. He was previously scientific advisor to Neo4j, professor at the University of Toronto, at École Normale Supérieure, and member of research staff at Bell Laboratories in Murray Hill. He received his PhD from the University of Pennsylvania in 1994. His main research interests are in the areas of data management and logic in computer science. He has written five books and over 250 technical papers. His awards include a Marie Curie Chair Award, a Royal Society Wolfson Research Merit Award, and eight Best Paper Awards. He has chaired program committees of major database and logic conferences (PODS, LICS, ICDT), and served as chair of the 2010 Federated Logic Conference and general chair of PODS. He is an ACM fellow, a fellow of the Royal Society of Edinburgh, and a member of Academia Europaea.
+                <ul>
+                    <li class="paper">
+                        <span class="title">[14:45-15:00] A Programming Language for Relational Data (RelationalAI Sponsor talk).</span>
+                        <span class="authors">Wim Martens.</span>
+                    </li>
+                 </ul>
+            </span>
+        </p>
+
+        <p class="session">
+            <div class="separator">Coffee break + free-roam posters (30 mins)</div>
+        </p>
+
+        <p class="session">
+            <span class="time">15:30-16:30</span>
+            <span class="stitle">Session 4 (Sponsor Talks)</span>
+        </p>
+
+	<ul>
+            <li class="paper">
+                <span class="title">[15:30-15:45] Aurendil: A Future Graph Database Runtime (Neo4j Sponsor Talk).</span>
+                <span class="authors">James Clarkson.</span>
+            </li>
+            <li class="paper">
+                <span class="title">[15:45-16:00] Neuro-symbolic rules processing using SAP HANA (SAP Sponsor Talk).</span>
+                <span class="authors">Felix Sasaki.</span>
+            </li>
+            <li class="paper">
+                <span class="title">[16:00-16:15] Knowledge Graph Design for Contextualizing Knowledge (Bloomberg Sponsor Talk).</span>
+                <span class="authors">Michael Pool.</span>
+            </li>
+	     <li class="paper">
+                <span class="title">[16:15-16:30] Designing A OneGraph Engine (Amazon Sponsor Talk).</span>
+                <span class="authors">Lefteris Sidirourgos.</span>
+            </li>
+        </ul>
+
+        <p class="session">
+            <div class="separator">~</div>
+        </p>
+
+        <br>
+        <p>Posters:</p>
+	    <b>All of the above papers will also feature corresponding posters. In addition, we will display the following works:</b>
+	    <br>
+	    <br>
+        <ul>
+            <li class="paper">
+                <span class="title">Graph Neural Networks on Graph Databases.</span>
+                <span class="authors">Dmytro Lopushanskyy and Borun Shi.</span>
+            </li>
+            <li class="paper">
+                <span class="title">Position Paper: Towards Documentation Guidelines for Property Graphs.</span>
+                <span class="authors">Larissa Shimomura, George Fletcher, Hiroaki Shiokawa, Toshiyuki Amagasa, and Md Abu Marjan.</span>
+            </li>
+            <li class="paper">
+                <span class="title">Lorentzian Graph Isomorphic Network.</span>
+                <span class="authors">Srinitish Srinivasan and Omkumar Cu.</span>
+            </li>
+        </ul>
+
+         <p class="session">
+        <div class="separator"><b>Closing remarks and reception</b></div>
+        </p>
+
+    </div>
+</section>
+	
+	<section class="row">
+		<div class="col">
+			<h2><a id="dates"></a>Important Dates</h2>
+			<ul>
+                <li>Abstract Submission: <s>March 17, 2025</s> March 24, 2025</li>
+                <li>Paper Submission: <s>March 31, 2025</s> April 4, 2025 (firm)</li>
+                <li>Notifications: <s>May 1, 2025</s></li>
+                <li>Camera Ready Submission: <s>May 11, 2025</s> May 16, 2025 (firm)</li>
+                <li>Workshop Date: June 27, 2025</li>
+			</ul>
+			<p></p>
+			<i>All deadlines are 23:59 AoE.</i>
+            <p></p>
+		</div>
+		<div class="col">
+			<h2>Workshop Organizers</h2>
+			<ul>
+                <li><a href="https://cs.au.dk/~clan/people/aarora">Akhil Arora</a>, Aarhus University &amp; Copenhagen Center for Social Data Science, Denmark</li>
+                <li><a href="https://web4.ensiie.fr/~stefania.dumbrava">Stefania Dumbrava</a>, ENSIIE &amp; Télécom SudParis, France</li>
+			</ul><br>
+			<h2>Steering Committee</h2>
+			<ul>
+                <li><a href="http://olafhartig.de/">Olaf Hartig</a>, Amazon Web Services (AWS) &amp; Link&ouml;ping University, Sweden</li>
+                <li><a href="https://cs.uwaterloo.ca/~ssalihog/">Semih Salihoglu</a>, University of Waterloo &amp; Kùzu, Canada</li>
+				<li><a href="https://cs-people.bu.edu/vkalavri/">Vasiliki Kalavri</a>, Boston University, US</li>
+                <li><a href="https://www.tue.nl/en/research/researchers/george-fletcher/">George Fletcher</a>, TU Eindhoven, The Netherlands</li>
+			</ul>
+		</div>
+	</section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="submission"></a>Paper Submission</h2>
+            <p>Authors are invited to submit original, unpublished research papers in the following categories: </p>
+            <ul>
+                <li><b>Archival</b> : Accepted papers under this category will be published by the ACM, indexed by DBLP, and will be available in the ACM DL.</li>
+            <ul>
+                <li>Regular (long) papers should be a maximum of 8 pages, excluding references and appendix.</li>
+                <li>Short papers, demonstration papers, and vision papers should be a maximum of 4 pages, excluding references and appendix.</li>
+                <li>Case studies should be a maximum of 4 pages, excluding references and appendix.</li>
+            </ul> <br>
+                <li>🆕 <b>Non-archival</b> : Accepted papers under this category will not be published in the proceedings, but will be listed on the website.</li>
+                <ul>
+                <li>Papers that are suitable for this category are work-in-progress papers presenting early results.<br>
+                    These papers should be a maximum of 4 pages in length, excluding references and appendix.</li>
+                </ul>       
+            </ul> <br>
+
+	    <p> Please indicate the submission type in the title of the paper, e.g., "[Regular Research Paper] XXX", "[Short Research Paper] XXX", "[Demo] XXX", "[Case-Study] XXX", "[Vision] XXX", 
+		    "[Work-in-progress] XXX" </p>
+            <p>Submissions must follow the latest 2-column <a href="https://www.acm.org/publications/proceedings-template">ACM Primary Article Template</a> (<a href="https://www.overleaf.com/latex/templates/association-for-computing-machinery-acm-sig-proceedings-template/bmvfhcdnxfty">Overleaf template</a>). </p>
+            <p>Reviewing will be double-anonymous, for which the submissions must be anonymized by following the same anonymity requirements as for <a href="https://2025.sigmod.org/calls_papers_sigmod_research.shtml">regular track papers at the SIGMOD/PODS 2025 conference</a>. </p>
+            <p>You can use the following LaTeX command to compile your paper without author names:</p>
+            <p><code>\documentclass[sigconf, anonymous, review]{acmart}</code>.</p>
+
+            <p>Submissions that do not follow these requirements will be desk-rejected.</p>
+            <p>Submissions will be handled through Easychair.
+            To submit click <a href="https://easychair.org/conferences/?conf=gradesnda2025">here</a>.
+            </p>
+        </div>
+    </section>
+
+  <section class="row">
+        <div class="col-full">
+            <h2><a id="pc"></a>Program Committee</h2>
+            <ul>
+<li>  <b>Shubhangi Agarwal</b>, Université Lyon 1, LIRIS, CNRS, France </li> 
+<li>  <b>Renzo Angles</b>, Universidad de Talca, Chile </li> 
+<li>  <b>Amitabha Bagchi</b>, Indian Institute of Technology, India </li> 
+<li>  <b>Srikanta Bedathur</b>, Indian Institute of Technology, India </li> 
+<li>  <b>Kaustubh Beedkar</b>, Indian Institute of Technology, India </li> 
+<li>  <b>Yang Cao</b>, University of Edinburgh, UK </li> 
+<li>  <b>James Clarkson</b>, Neo4j, USA </li> 
+<li>  <b>Sourav Dutta</b>, Huawei Research Center, Ireland </li> 
+<li>  <b>Lisa Ehrlinger</b>, Hasso-Plattner-Institut, Germany </li> 	 
+<li>  <b>Lorena Etcheverry</b>, Universidad de la República, Uruguay </li> 
+<li>  <b>Sainyam Galhotra</b>, Cornell University, USA </li>
+<li>  <b>Amélie Gheerbrant</b>, Université de Paris, IRIF, CNRS, France </li> 
+<li>  <b>Paul Groth</b>, University of Amsterdam, The Netherlands </li> 
+<li>  <b>Jan Hidders</b>, Birkbeck College, University of London, UK </li> 
+<li>  <b>Panagiotis Karras</b>, University of Copenhagen, Denmark </li> 
+<li>  <b>Haridimos Kondylakis</b>, ICS-FORTH, Greece </li> 
+<li>  <b>Longbin Lai</b>, Alibaba Group, China </li> 
+<li>  <b>Sahil Manchanda</b>, Pocket FM Data Science Team, India </li> 
+<li>  <b>Silviu Maniu</b>, Université Grenoble Alpes, LIG, CNRS, France </li> 
+<li>  <b>Ioana Manolescu</b>, INRIA, Institut Polytechnique de Paris, France </li> 
+<li>  <b>Victor Marsault</b>, Université Gustave Eiffel, CNRS, LIGM, France </li> 
+<li>  <b>Andrea Mauri</b>, Université Lyon 1, LIRIS, CNRS, France </li> 
+<li>  <b>Amine Mhedhbi</b>, École Polytechnique de Montréal, Canada </li> 
+<li>  <b>Davide Mottin</b>, Aarhus University, Denmark </li> 
+<li>  <b>Serafeim Papadias</b>, TU Berlin, Germany </li> 
+<li>  <b>Marcus Paradies</b>, Ludwig-Maximilians-Universität München, Germany </li> 
+<li>  <b>Liat Peterfreund</b>, Hebrew University, RelationalAI, Israel </li> 
+<li>  <b>Evaggelia Pitoura</b>, University of Ioannina, Greece </li> 
+<li>  <b>Yuya Sasaki</b>, Osaka University, Japan </li> 
+<li>  <b>Semih Salihoglu</b>, University of Waterloo, Kùzu, Canada </li> 
+<li>  <b>Petra Selmer</b>, Bloomberg, UK </li> 
+<li>  <b>Hrishikesh Terdalkar</b>, Université Lyon 1, LIRIS, CNRS, France </li>		   
+<li>  <b>Dominik Tomaszuk</b>, University of Bialystok, Poland </li> 
+<li>  <b>Riccardo Tommasini</b>, INSA Lyon, LIRIS, CNRS, France </li> 
+<li>  <b>Georgia Troullinou</b>, Université Grenoble Alpes, France </li> 
+<li>  <b>Ana Lucia Varbanescu</b>, University of Amsterdam, The Netherlands </li> 
+<li>  <b>Genoveva Vargas-Solar</b>, CNRS, Université Lyon 1, LIRIS, France </li> 
+<li>  <b>Nikolay Yakovets</b>, Eindhoven University of Technology, The Netherlands </li> 
+
+       </ul>
+        </div>
+    </section>
+
+<!--
+    <section class="row">
+        <div class="col-full">
+            <h2><a id="pc"></a>Program Committee</h2>
+            <ul>
+<li>	Renzo	Angles,	Universidad de Talca	</li>
+<li>	Marcelo	Arenas,	PUC Chile	</li>
+<li>	Amitabha	Bagchi,	Indian Institute of Technology, Delhi	</li>
+<li>	Kaustubh	Beedkar,	IIT Delhi	</li>
+<li>	Yang	Cao,	The University of Edinburgh	</li>
+<li>	Nathalie	Charbel,	Neo4j	</li>
+<li>	Juan	Colmenares,	Microsoft	</li>
+<li>	Sourav	Dutta,	Huawei Research	</li>
+<li>	George H. L.	Fletcher,	Eindhoven University of Technology	</li>
+<li>	Russ	Harmer,	CNRS & ENS Lyon	</li>
+<li>	Jan	Hidders,	Birkbeck College, University of London	</li>
+<li>	Davide	Mottin,	Aarhus University	</li>
+<li>	Nikos	Ntarmos,	Huawei Technologies R&D (UK) Ltd	</li>
+<li>	Evaggelia	Pitoura,	Univ. of Ioannina	</li>
+<li>	Petra	Selmer,	Bloomberg	</li>
+<li>	Marco	Serafini,	University of Massachusetts Amherst	</li>
+<li>	Hiroaki	Shiokawa,	University of Tsukuba	</li>
+<li>	Vasileios	Trigonakis,	Oracle Labs	</li>
+<li>	Hannes	Voigt,	Neo4j	</li>
+<li>	Yinghui	Wu,	Case Western Reserve University	</li>
+<li>	Yinglong	Xia,	Facebook	</li>
+<li>	Yuichi	Yoshida,	National Institute of Informatics	</li>
+<li>	Shangdi	Yu,	MIT	</li>
+
+            </ul>
+        </div>
+    </section>
+-->	
+	<section class="row">
+        <div class="col-full">
+            <h2><a id="travel"></a>Student Travel Awards</h2>
+            <p>Thanks to the generous support of our Sponsors, we are offering awards for selected students to attend GRADES-NDA@SIGMOD in person. 
+		    Each awardee will receive a stipend to <b>partially cover</b> the expense to attend the conference in-person. 
+		    Awardees are expected to register and attend the GRADES-NDA Workshop 
+		    and encouraged to attend the SIGMOD conference. Students will have to make their own arrangements for travel and accommodation. 
+		    These awards are only for students who can attend in person. 
+		    If you cannot attend in person, we advise you to check with <a href="https://2025.sigmod.org/travel_awards.shtml">the SIGMOD travel awards committee</a>.</p>
+            <p><b>Eligibility:</b> Applicants need to be full-time undergraduate or graduate students. 
+		    You do not need to have an accepted paper to GRADES-NDA (or SIGMOD) to be eligible. 
+		    We will primarily prioritize students whose advisors cannot provide financial support. 
+		    We will also prioritize students who have a GRADES-NDA accepted paper, who are not from North America or Europe, 
+		    as well as female and minority students. </p>
+            <p><b>Application Procedure:</b> To apply for a grant, the student must email the necessary materials to GRADES-NDA chairs (at our email address: gradesnda2025@easychair.org) by <b>May 23</b>. 
+		    We will notify applicants by <b>May 30</b>.
+                    Please submit the following information in a single PDF file with your application:</p>
+            <ul>
+                <li>Your full name, school, and email address.</li>
+                <li>Your advisor's full name and email address.</li>
+                <li>Your CV.</li>
+                <li>An abstract, summarizing your thesis research and its connection to graph data management or graph analytics (at most one page in single column format).</li>
+                <li>If you think your presence could help diversity in the GRADES-NDA or SIGMOD community (in terms of the gender, geography/origin, ethnicity or in other ways), please add an additional paragraph with an explanation (does not count towards the one-page limit for your research).</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="row">
+        <h2 id="previous">Past Workshops</h2>
+        <p>GRADES-NDA is in its ninth edition, and had successful joint meetings co-located with ACM SIGMOD/PODS from 2018 to 2025. Specifically, it is the merger of the GRADES and NDA workshops, which were each independently organized and successfully held at previous ACM SIGMOD/PODS conferences: GRADES (since 2013) and NDA (since 2017). The organizers of GRADES and NDA mutually agreed upon a joint meeting from 2018 onwards.</p><br>
+        <div class="col" style="width:30%">
+            <h2>GRADES-NDA</h2>
+            <ul>
+                <li><a href="http://gradesnda.github.io/2024/">GRADES-NDA 2024</a></li>
+                <li><a href="http://gradesnda.github.io/2023/">GRADES-NDA 2023</a></li>
+                <li><a href="http://gradesnda.github.io/2022/">GRADES-NDA 2022</a></li>
+                <li><a href="http://gradesnda.github.io/2021/">GRADES-NDA 2021</a></li>
+                <li><a href="http://gradesnda.github.io/2020/">GRADES-NDA 2020</a></li>
+                <li><a href="https://sites.google.com/site/gradesnda2019/">GRADES-NDA 2019</a></li>
+                <li><a href="https://sites.google.com/site/gradesnda2018/">GRADES-NDA 2018</a></li>
+            </ul>
+        </div>
+        <div class="col" style="width:30%">
+            <h2>GRADES</h2>
+            <ul>
+                <li><a href="https://event.cwi.nl/grades/2017/index.shtml">GRADES 2017</a></li>
+                <li><a href="https://event.cwi.nl/grades/2016/index.shtml">GRADES 2016</a></li>
+                <li><a href="https://event.cwi.nl/grades/2015/index.shtml">GRADES 2015</a></li>
+                <li><a href="https://event.cwi.nl/grades/2014/index.shtml">GRADES 2014</a></li>
+                <li><a href="https://event.cwi.nl/grades/2013/index.shtml">GRADES 2013</a></li>
+            </ul>
+        </div>
+        <div class="col" style="width:30%">
+            <h2>NDA</h2>
+            <ul>
+                <li><a href="https://sites.google.com/site/networkdataanalytics2017/">NDA 2017</a></li>
+                <li><a href="https://sites.google.com/site/networkdataanalytics2016/">NDA 2016</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full">
+            <h2 id="sponsors">Sponsored by (more to be confirmed)</h2>
+            <div class="photo-grid">
+                <a href="https://www.amazon.com/" class="col-3"><img src="img/amazon-logo.png" alt="Amazon" width="200"></a>
+                <a href="https://www.bloomberg.com" class="col-3"><img src="img/logo-bloomberg.svg" alt="Bloomberg" width="200" style="padding-right: 4em"></a>
+          <!--      <a href="https://neo4j.com/" class="col-3"><img src="img/google.png" alt="Google" width="200"></a> -->
+                <a href="https://www.microsoft.com" class="col-3"><img src="img/microsoft-logo.png" alt="Microsoft" width="200"></a>
+                <a href="https://neo4j.com/" class="col-3"><img src="img/neo4j-logo.png" alt="Neo4j" width="200"></a> 
+                <a href="https://relational.ai/" class="col-3"><img src="img/Logo-RAI-Color-4x.png" alt="RelationalAI"  width="300" style="padding-right: 4em"></a>
+                <a href="https://www.sap.com/" class="col-3"><img src="img/sap-logo.png" alt="SAP" width="150"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="row">
+        <div class="col-full-b">
+            <h2>Get in touch</h2>
+            <p>
+                For questions, please <a href="mailto:grades-nda@googlegroups.com">email us</a> &#x1F60A;. Follow us on <a href="https://bsky.app/profile/did:plc:4wn6us7ull5fscsqxedot2yy">BlueSky</a>, <a href="https://www.linkedin.com/company/grades-nda">LinkedIn</a>, and <a href="https://twitter.com/gradesnda">X</a> for the latest updates.
+            </p>
+        </div>
+    </section>
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        document.write('<script src="js/vendor/jquery.1.11.min.js"><\/script>');
+    }
+</script>
+
+<script src="js/vendor/jquery.fluidbox.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'YOUR_GOOGLE_ANALYTICS_ID', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
+
+<!-- © 2014 - Based on free website template by <a href="http://www.pixelsbyrick.com">Rick Waalders</a> -->
